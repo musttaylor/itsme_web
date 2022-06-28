@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
     <title>ITSME:</title>
-
-    <!-- 부트스트랩 -->
-    <link href="bootstrap-4.5.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
     <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
     <!--[if lt IE 9]>
@@ -18,116 +14,170 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-
-    <h1>Hello, world!</h1>
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" height:200>
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" height="200">
-        <div class="carousel-item active"  height="200">
-          <img width="100"  src="..." class="d-block w-100" alt="ITSME: Video 1">
-        </div>
-        <div class="carousel-item"  height="200">
-          <img width="100" src="data:image/png;base64,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" class="d-block w-100" alt="ITSME: Video 2">
-        </div>
-        <div class="carousel-item"  height="200">
-          <img width="100"  src="data:image/png;base64,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" class="d-block w-100" alt="ITSME: Video 3">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-    <!-- container는 가장 상위 요소 -->
-    <div class="container"> 
-      <!-- row는 간단하게 설명하자면 콘텐츠영역을 감싸는 상위요소입니다. -->
-      <div class="row"> <!-- 이 영역은 콘텐츠 3개를 포함합니다.-->
-        <!-- col-md-숫자는 콘텐츠영역입니다.  -->
-        <div class="col-md-4"> 
-          아이템
-        </div>
-        <div class="col-md-4"> 
-          아이템
-        </div>
-        <div class="col-md-4"> 
-          아이템
-        </div>
-      </div>
-      <div class="row"> <!-- 이 영역은 콘텐츠 4개를 포함합니다.-->
-        <!-- col-md-숫자는 콘텐츠영역입니다.  -->
-        <div class="col-md-3"> 
-          아이템
-        </div>
-        <div class="col-md-3"> 
-          아이템
-        </div>
-        <div class="col-md-3"> 
-          아이템
-        </div>
-        <div class="col-md-3"> 
-          아이템
-        </div>
-      </div>
-      <div class="row"> <!-- 이 영역은 콘텐츠 2개를 포함합니다.-->
-        <!-- col-md-숫자는 콘텐츠영역입니다.  -->
-        <div class="col-md-6"> 
-          아이템
-        </div>
-        <div class="col-md-6"> 
-          아이템
-        </div>
-      </div>
-    </div>
-
     <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
     <!--script src="js/bootstrap.min.js"></script-->
     <script src="bootstrap-4.5.3/dist/js/bootstrap.min.js"></script>
+    <!-- 부트스트랩 -->
+    <link href="bootstrap-4.5.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom JS -->
+    <script src="./itsme.js"></script>
+
+    <div style="background-color: #E84C47;">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="./resources/logo_blue.png" alt="ITSME:"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" height="auto" style="background-color:#000000Af; text-align: center;">
+          <div class="carousel-item active" height="auto">
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/l0sg928KD5o" title="My Chemical Romance - Welcome To The Black Parade [Official Music Video] [HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--img width="100"  src="..." class="d-block w-100" alt="ITSME: Video 1"-->
+          </div>
+          <div class="carousel-item"  height="auto">
+            <iframe width="80%" height="auto" src="https://www.youtube.com/embed/vfnjAqZHLAw" title="My Chemical Romance - Welcome To The Black Parade [Official Music Video] [HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--img width="100" src="..." class="d-block w-100" alt="ITSME: Video 2"-->
+          </div>
+          <div class="carousel-item"  height="auto">
+            <iframe width="80%" height="auto" src="https://www.youtube.com/embed/mKddGdN7dEM" title="My Chemical Romance - Welcome To The Black Parade [Official Music Video] [HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--img width="100"  src="..." class="d-block w-100" alt="ITSME: Video 3"-->
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="container">
+        <span>
+          ITSME는 easy-D작가와 머스트게임즈가 NFT 시장에 처음 던지는 도전장입니다.
+          그림 속 여성은 단순한 피사체이기를 거부합니다.
+          세상이 바라는 미의 기준, 여성성의 기준에 자신을 맞추기 보다는 나 자신으로도 당당한 여성, 그것이 ITSME 가 그린 다양한 캐릭터의 모습입니다.
+          NFT와 굿즈를 통해 나 자신을 찾아가는 여정에 당신을 초대합니다.
+        </span>
+      </div>
+    </div>
+
+    <div style="background-color: #91ACFF;">
+
+      <img src="./resources/logo_blue.png" class="rounded mx-auto d-block" width="auto" height="auto" alt="ITSME:">
+
+      <div style="text-align: center;">
+        <span style="color:#0F2D90; text-align: center;">#나는 있는 그대로 나야 #당당하고 긍정적이게</span>
+      </div>
+
+      <div class="container">
+        <span style="
+        font-family: 'Apple SD Gothic Neo';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 180%;
+        /* or 25px */
+        
+        text-align: center;
+        
+        color: #FEFFFF;">
+          스스로에 대한 따뜻한 시선을 담아낸 it’s me는 나의 존재를 있는 그대로 세상에 외치는 구호입니다.
+          이를 통해 여성이 지닌 다양한 정체성에 대한 긍정과 타인에 의해 규정되지 않는 자의식을 담아냅니다.
+          dnt음 이모티콘 :) 에서 추출한 : 는 세상을 바라보는 우리의 시선인 동시에 다양한 주제를 담아낼 수 있는 기호 Colon(콜론)입니다.
+          it’s me에서 it’s us로 세계관을 확장하며 다양한 이야기를 전개해나갈 수 있습니다.
+        </span>
+      </div>
+
+      <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" height="auto" style="background-color:#000000Af; text-align: center;">
+          <div class="carousel-item active"  height="auto">
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/l0sg928KD5o?autoplay=1" title="My Chemical Romance - Welcome To The Black Parade [Official Music Video] [HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--img width="100"  src="..." class="d-block w-100" alt="ITSME: Video 1"-->
+          </div>
+          <div class="carousel-item"  height="auto">
+            <iframe width="80%" height="auto" src="https://www.youtube.com/embed/vfnjAqZHLAw" title="My Chemical Romance - Welcome To The Black Parade [Official Music Video] [HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--img width="100" src="..." class="d-block w-100" alt="ITSME: Video 2"-->
+          </div>
+          <div class="carousel-item"  height="auto">
+            <iframe width="80%" height="auto" src="https://www.youtube.com/embed/mKddGdN7dEM" title="My Chemical Romance - Welcome To The Black Parade [Official Music Video] [HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--img width="100"  src="..." class="d-block w-100" alt="ITSME: Video 3"-->
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="myTab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">list-homelist-homelist-home...</div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">list-profilelist-profilelist-profile...</div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">list-messageslist-messageslist-messages...</div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">list-settingslist-settingslist-settings...</div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
