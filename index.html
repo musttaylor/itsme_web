@@ -24,44 +24,83 @@
     <!-- Custom JS -->
     <script src="./itsme.js"></script>
 
+    <div id="nav_home"></div>
+
     <div style="background-color: #E84C47;">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          <img src="./resources/logo_blue.png" alt="ITSME:"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#nav_home">
+            <img src="./resources/logo_blue.png" alt="ITSME:"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+          style="border: none; background-color: transparent;" >
+            <!--span class="navbar-toggler-icon"></span-->
+            <img src="./resources/button_nav_toggle.png" alt="ITSME:"/>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="right: 0">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#nav_home" 
+              style="
+              font-family: 'Gotham';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 27px;
+              /* identical to box height */
+              display: flex;
+              align-items: center;
+              letter-spacing: -0.32px;
+              color: #0F2D90;">
+                Brand
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+              <a class="nav-link" href="#nav_char" 
+              style="
+              font-family: 'Gotham';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 27px;
+              /* identical to box height */
+              display: flex;
+              align-items: center;
+              letter-spacing: -0.32px;
+              color: #0F2D90;">
+                Character
+              </a>
+              <a class="nav-link" href="#nav_goods" 
+              style="
+              font-family: 'Gotham';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 27px;
+              /* identical to box height */
+              display: flex;
+              align-items: center;
+              letter-spacing: -0.32px;
+              color: #0F2D90;">
+                Goods
+              </a>
+              <a class="nav-link" href="#nav_faq" 
+              style="
+              font-family: 'Gotham';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 27px;
+              /* identical to box height */
+              display: flex;
+              align-items: center;
+              letter-spacing: -0.32px;
+              color: #0F2D90;">
+                FAQ
+              </a>
+              <!--a class="nav-link disabled">Disabled</a-->
+            </div>
+          </div>
         </div>
       </nav>
+
 
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -105,7 +144,7 @@
 
     <div style="background-color: #91ACFF;">
 
-      <img src="./resources/logo_blue.png" class="rounded mx-auto d-block" width="auto" height="auto" alt="ITSME:">
+      <img src="./resources/logo_blue.png" class="mx-auto d-block" width="auto" height="auto" alt="ITSME:">
 
       <div style="text-align: center;">
         <span style="color:#0F2D90; text-align: center;">#나는 있는 그대로 나야 #당당하고 긍정적이게</span>
@@ -161,23 +200,117 @@
       </div>
     </div>
 
-    <div class="row">
+    <div id="nav_char"></div>
+
+    <div class="row" style="background-color: teal;">
       <div class="col-4">
         <div class="list-group" id="myTab" role="tablist">
-          <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
-          <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
-          <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
-          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
-          <a class="list-group-item list-group-item-action" id="list-settings2-list" data-bs-toggle="list" href="#list-settings2" role="tab" aria-controls="list-settings">Settings</a>
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+            <img src="./resources/char_sample_01.png" class="mx-auto d-block" width="auto" height="auto" alt="ITSME:">
+          </a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+            <img src="./resources/char_sample_02.png" class="mx-auto d-block" width="auto" height="auto" alt="ITSME:">
+          </a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">
+            <img src="./resources/char_sample_03.png" class="mx-auto d-block" width="auto" height="auto" alt="ITSME:">
+          </a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
+            <img src="./resources/char_sample_04.png" class="mx-auto d-block" width="auto" height="auto" alt="ITSME:">
+          </a>
+          <a class="list-group-item list-group-item-action" id="list-settings2-list" data-bs-toggle="list" href="#list-settings2" role="tab" aria-controls="list-settings">
+            <img src="./resources/char_sample_05.png" class="mx-auto d-block" width="auto" height="auto" alt="ITSME:">
+          </a>
         </div>
       </div>
+
       <div class="col-8">
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">list-homelist-homelist-home...</div>
-          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">list-profilelist-profilelist-profile...</div>
-          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">list-messageslist-messageslist-messages...</div>
-          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">list-settingslist-settingslist-settings...</div>
-          <div class="tab-pane fade" id="list-settings2" role="tabpanel" aria-labelledby="list-settings2-list">list-settingslis2222t-settingslist-settings...</div>
+        <div class="tab-content" style="background-color: #FF8175;">
+          
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            <p style="
+            font-weight: 800;">
+              아미 Ami
+            </p>
+            <p>
+            “고생은 싫지만, 무시당하지 않았으면 좋겠어.”
+            </p>
+            <p>
+            서울 이태원에 사는 스물 일곱 살 아미(Ami)
+            9 to 6 중소기업에서 일하고, 퇴근 후엔 악세서리 판매를 부업으로 하고 있다.  
+            돈을 많이 벌어 조기 은퇴하는 게 꿈이지만, ‘현재’에는 충실한 편이다.
+            한 때는 경찰 공무원이 되고 싶어 오랫동안 복싱을 했다.
+            열심히 했더니 얼마 전 아마추어 복싱 선발전에 나가보라는 제안도 받았다. 
+            일주일에 하루는 디자인 학원을, 이틀은 발레 학원에 간다. 
+            늦은 밤, 이별한 친구 연락을 받으면 달려가서 껴안아 준다. ESTJ.   
+            올해 목표는 이직. 성공하면 스스로에게 오키나와 여행 티켓을 선물할 예정이다.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+            <p style="
+            font-weight: 800;">
+              희도 Hee-do
+            </p>
+            <p>
+              “기왕 하는 일, 야무지게 하고 조용히 쉬자.”
+            </p>
+            <p>
+              화장품 수출 회사 새내기 직원 희도(Hee-Do). 조용한 성격의 노력파.
+              어느 날 회사 대표가 오면서 업무를 조정한다며, 희도를 디지털 마케팅 부서로 보낸다. “희도 씨 혹시 인스타그램 해요? 디지털 마케팅 하려면 앞으로 소셜미디어와도 친해져야 하니까 한번 운영해 보세요. 인사이트 얻을 게 많을 거에요.”
+              사실 희도는 코로나19 시기 인스타그램을 ‘끊었다.’ 
+              다른 사람의 모습을 보면 부러워하는 마음이 들어서다. 
+              뭐 어쩌겠어. 일은 일이니까, 싫어도 해낸다. 전형적인 ISFJ.
+              인스타 팔로워 1만 명 만들기 목표가 생겼다. 
+            </p>
+          </div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <p style="
+            font-weight: 800;">
+              사라 Sarah
+            </p>
+            <p>
+              “이끼로 덮인 숲에서 사랑하고 싶어.”
+            </p>
+            <p>
+              이끼를 사랑하는 박사 후 연구원. 최초 식물인 이끼를 연구해 숲을 키우는 기술을 연구한다.
+              주말에는 홍대 인근에 있는 와인바에서 하는 독서 모임에 참석한다.
+              요새 읽는 책은 모 작가의 SF 소설집. 인상적인 문장을 연구실 모니터에 써 붙였다. 
+              [알아낸 사실들 이면에는 여전히 답을 알 수 없는 질문들이 있었다.] 
+              마음에 드는 음악을 듣게 되면 저녁에 친구에게 보내 같이 듣자고 하는 편이다. ENTP.   
+            </p>
+          </div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            <p style="
+            font-weight: 800;">
+              세나 Se-na
+            </p>
+            <p>
+              “의지박약이라도 운동은 계속 할거야”
+            </p>
+            <p>
+              남들이 보기엔 유교걸이지만, 스트릿 댄스 마니아. 출판 편집자로 일한다.  
+              취미로 하던 춤 연습에 더해 최근 목표를 하나 세웠다. 바프 촬영.
+              친구들에게 선언까지 해뒀다. 목표 달성까지 앞으로 네 달 남았다. 
+              세나는 닭가슴살과 고구마를 정기 배달시키고, 
+              운동을 함께 할 남사친을 찾기 위해…틴더를 깔았다. ISTJ. 
+            </p>
+          </div>
+          <div class="tab-pane fade" id="list-settings2" role="tabpanel" aria-labelledby="list-settings2-list">
+            <p style="
+            font-weight: 800;">
+              효인 Hyo-in
+            </p>
+            <p>
+              “오늘에서 내일로 우아하게 걸어 가야지.”
+            </p>
+            <p>
+              N년차 공무원 다인. 오늘따라 남부터미널역에서 기다려도 버스가 오질 않는다. 
+              에어팟으론 프로코피예프의 ‘로미오와 줄리엣’을 듣고 있지만, 배에서는 저녁 달라고 외치는 꼬로록 소리가 요동친다. 야근하자는 과장 눈치도 무시하고 늦지 않으려고 기를 쓰고 달려왔다. 공연 시간이 다 되어 마음이 급해진 다인은 언덕을 넘어 예술의 전당까지 걷기 시작한다. 어떻게 구한 발레단 내한 공연 티켓인데. 연간 사업계획서에 표를 버릴 수는 없다. 
+              ‘하필 이런 날 지미추 펌프스를 골랐다니. 내가 미친 년이지’
+              효인은 구두를 벗어 손에 들고 퀵보드를 탔다. 오페라극장에 겨우 도착한다. 
+              다행히 아직 오보에에 맞춰 오케스트라가 조율하고 있었다. 공연장 조명이 어두워진다.
+              가쁜 숨을 내쉬면서 다인은 생각한다. ‘오늘보다는 내일 우아할거야.’ ENTJ. 
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -209,7 +342,7 @@
         </span>
       </div>
 
-      <img src="./resources/logo_me_white.png" class="rounded mx-auto d-block" width="auto" height="auto" alt="ITSME:" style="background-color: #E84C47;">
+      <img src="./resources/logo_me_white.png" class="mx-auto d-block" width="auto" height="auto" alt="ITSME:" style="background-color: #E84C47;">
     </div>
 
     <div style="background-color: white;">
@@ -226,7 +359,7 @@
         </span>
       </div>
 
-      <img src="./resources/logo_easyd.png" class="rounded mx-auto d-block" width="auto" height="auto" alt="ITSME:" style="text-align: left;">
+      <img src="./resources/logo_easyd.png" class="mx-auto d-block" width="auto" height="auto" alt="ITSME:" style="text-align: left;">
 
       <div class="container" style="text-align: left;">
         <span style="
@@ -302,8 +435,10 @@
         </span>
       </div>
 
-      <img src="./resources/nft_samples.png" class="rounded mx-auto d-block" width="auto" height="auto" alt="ITSME:" style="text-align: left;">
+      <img src="./resources/nft_samples.png" class="mx-auto d-block" width="auto" height="auto" alt="ITSME:" style="text-align: left;">
     </div>
+
+    <div id="nav_goods"></div>
 
     <div style="background-color: white;">
       <div style="text-align: left;">
@@ -598,7 +733,7 @@
 
     <div style="background-color: #FF8175;">
 
-      <img src="./resources/logo_blue.png" class="rounded mx-auto d-block" width="auto" height="auto" alt="ITSME:">
+      <img src="./resources/logo_blue.png" class="mx-auto d-block" width="auto" height="auto" alt="ITSME:">
 
       <div style="text-align: center;">
         <span style="color:#FFFFFF; text-align: center;">출시 알림 예약</span>
@@ -642,6 +777,8 @@
         알림 신청하기
       </button>
     </div>
+
+    <div id="nav_faq"></div>
 
     <div style="background-color: #E84C47;">
 
@@ -702,9 +839,9 @@
       </div>
     </div>
 
-    <div style="background-color: #0F2D90;">
+    <div style="background-color: #0F2D90;" style="position: relative;">
       
-      <img src="./resources/footer_itsme.png" class="rounded mx-auto d-block" alt="ITSME:" style="position:absolute;">
+      <img src="./resources/footer_itsme.png" class="mx-auto d-block" alt="ITSME:" style="position:absolute; right:0;">
 
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
