@@ -1,0 +1,106 @@
+#nav_button {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.32px;
+    color: #0F2D90;
+}
+
+#section_1_root {
+    background-color: #E84C47;
+    background-image: url("./resources/nav_bg__toggled.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-bottom: 2rem;
+}
+
+#nav_container {
+    background-image: url("./resources/nav_bg__toggled.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 100%;
+}
+
+#nav_inner_container {
+    position: absolute; 
+    margin-top: 0px; 
+    right: 0px;
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+#carousel_item_container {
+    position: relative; /* absolute는 부모가 relative일 때 부모를 따라간다. */
+    width: 86%;
+    height: 86%;
+    padding-right: 72%; /* (100% - (14x2)% */
+    padding-bottom: 56.25%; /* 16:9 비율 */
+  }
+  
+#carousel_item {
+    position: absolute;
+    width: 100%; /* 부모에 맞게 꽉 채운다. */
+    height: 100%;
+  }
+
+#carouselExampleControls {
+    position: relative;
+    margin-top: 32px;
+    margin-bottom: 37px;
+}
+
+/*
+#carousel-control-prev {
+    position: absolute;
+    margin-left: 14%;
+}
+
+#carousel-control-next {
+    position: absolute;
+    margin-right: 4%;
+}
+*/
+
+#carousel-control-prev-icon {
+    background-image: url("./resources/chevron-left.png");
+}
+
+#carousel-control-next-icon {
+    background-image: url("./resources/chevron-right.png");
+}
+
+#text_intro {
+    position: inherit;
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.text_bordered {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2.72356px 5.44712px;
+    gap: 7.26px;
+    
+    background: #FFFFFF;
+    border-radius: 18.1571px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
