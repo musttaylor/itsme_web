@@ -26,4 +26,38 @@ firstTab.show()
             document.getElementById('nav_inner_container').setAttribute('style','position: absolute; margin-top: 0px; right: 0px;');
         }
     })
+
+    document.getElementById('list-home-list').addEventListener('click',() => {        
+        char_selected('list-home-list')
+    })
+    document.getElementById('list-profile-list').addEventListener('click',() => {        
+        char_selected('list-profile-list')
+    })
+    document.getElementById('list-messages-list').addEventListener('click',() => {        
+        char_selected('list-messages-list')
+    })
+    document.getElementById('list-settings-list').addEventListener('click',() => {        
+        char_selected('list-settings-list')
+    })
+    document.getElementById('list-settings2-list').addEventListener('click',() => {        
+        char_selected('list-settings2-list')
+    })
 })()
+
+
+function char_selected(id) {
+    var tabList = ['list-home-list', 'list-profile-list', 'list-messages-list', 'list-settings-list', 'list-settings2-list'];
+
+    for (var idx in tabList) {
+        var tempId = tabList[idx]; 
+        console.log(tempId);
+        let charTab = document.getElementById(tempId.toString());
+        let charImg = charTab.querySelector('#list-tab-item');
+
+        if (tempId == id) {
+            charImg.setAttribute('style','background-image: url("./resources/char_selected_s.png"); background-repeat: no-repeat; background-position: center;');
+        } else {
+            charImg.setAttribute('style','background-image: none;');
+        }
+    }
+}
