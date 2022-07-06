@@ -190,6 +190,8 @@
 
     border-radius: 16px;
     z-index: 2;
+
+    font-size: 14px;
 }
 
 #list-home
@@ -332,4 +334,14 @@ a:active {
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+#img_nft_bg {
+    background-color: #E84C47;
+    position:relative;
+    
+    margin-top: 4rem;
+    background-image: url("./resources/nft_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
