@@ -116,6 +116,7 @@
 #text_bordered_containder {
     position: inherit;
     margin-top: 2rem;
+    margin-bottom: 0;
 }
 
 .text_bordered {
@@ -125,6 +126,7 @@
     padding: 2.72356px 5.44712px;
     margin-left: 3.63px;
     margin-right: 3.63px;
+    margin-bottom: 0;
     
     background: #FFFFFF;
     border-radius: 18.1571px;
@@ -307,3 +309,27 @@
     margin: 0 auto;
     position: relative;
  }
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+#artwork_title {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    /* or 22px */
+    color: #000000;
+
+    margin-top: 0.5rem;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

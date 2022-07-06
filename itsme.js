@@ -50,7 +50,7 @@ function char_selected(id) {
 
     for (var idx in tabList) {
         var tempId = tabList[idx]; 
-        console.log(tempId);
+        //console.log(tempId);
         let charTab = document.getElementById(tempId.toString());
         let charImg = charTab.querySelector('#list-tab-item');
 
