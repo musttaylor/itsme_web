@@ -13,7 +13,7 @@
 
 #section_1_root {
     background-color: #E84C47;
-    background-image: url("./resources/nav_bg__toggled.png");
+    background-image: url("../resources/nav_bg__toggled.png");
     background-repeat: no-repeat;
     background-position: right top;
     position:relative;
@@ -42,7 +42,7 @@
 }
 
 #nav_container {
-    background-image: url("./resources/nav_bg__toggled.png");
+    background-image: url("../resources/nav_bg__toggled.png");
     background-repeat: no-repeat;
     background-position: right top;
     height: 100%;
@@ -92,11 +92,11 @@
 */
 
 #carousel-control-prev-icon {
-    background-image: url("./resources/chevron-left.png");
+    background-image: url("../resources/chevron-left.png");
 }
 
 #carousel-control-next-icon {
-    background-image: url("./resources/chevron-right.png");
+    background-image: url("../resources/chevron-right.png");
 }
 
 #text_intro {
@@ -341,7 +341,7 @@ a:active {
     position:relative;
     
     margin-top: 4rem;
-    background-image: url("./resources/nft_bg.png");
+    background-image: url("../resources/nft_bg.png");
     background-repeat: no-repeat;
     background-position: center;
 }

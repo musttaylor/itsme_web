@@ -42,6 +42,23 @@ firstTab.show()
     document.getElementById('list-settings2-list').addEventListener('click',() => {        
         char_selected('list-settings2-list')
     })
+
+    document.forms["contact-form"].addEventListener("submit", async (event) => {        
+        event.preventDefault() // 이벤트를 명시적으로 처리하지 않은 경우, 해당 이벤트에 대한 사용자 에이전트의 기본 동작을 실행하지 않도록 지정
+        
+        // 내부 서버에 입력 데이터 전송
+        let resp = await fetch(event.target.action, {
+          method: "POST",
+          body: new URLSearchParams(new FormData(event.target)),
+        })
+        
+        const body = await resp.json() // 응답데이터 확인
+        if(body.result == "success") {
+            alert("전송 완료")
+        }else {
+            alert("전송 오류")
+        }
+      })
 })()
 
 
