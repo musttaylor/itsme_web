@@ -1,13 +1,5 @@
 // Custom JS
 
-/*
-const firstTabEl = document.querySelector('#myTab a')
-const firstTab = new bootstrap.Tab(firstTabEl)
-
-firstTab.show()
-*/
-
-
 (()=> {
     document.querySelector('.navbar-toggler').addEventListener('click',() => {        
         let navBtn = document.querySelector('.navbar-collapse')
@@ -17,7 +9,7 @@ firstTab.show()
         if (navBtn.style.display == 'block') {
             // toggled
             document.getElementById('toggle-btn').setAttribute('src','./resources/button_nav_toggle_x.png');
-            document.getElementById('nav_container').setAttribute('style','background-color: #ffffff; background-image: url("./resources/nav_bg__toggled.png");');
+            document.getElementById('nav_container').setAttribute('style','background-color: #ffffff; background-image: url("./resources/nav_bg__toggled.png"); background-repeat: no-repeat; background-position: right top;');
             document.getElementById('nav_inner_container').setAttribute('style','position: relative; margin-top: 50px;');
         } else {
             // default
@@ -42,7 +34,7 @@ firstTab.show()
     document.getElementById('list-settings2-list').addEventListener('click',() => {        
         char_selected('list-settings2-list')
     })
-
+    
     document.forms["contact-form"].addEventListener("submit", async (event) => {        
         event.preventDefault() // 이벤트를 명시적으로 처리하지 않은 경우, 해당 이벤트에 대한 사용자 에이전트의 기본 동작을 실행하지 않도록 지정
         
@@ -59,7 +51,7 @@ firstTab.show()
             alert("전송 오류")
         }
       })
-})()
+    })()
 
 
 function char_selected(id) {
