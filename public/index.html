@@ -161,10 +161,8 @@
         
         <img id="sec_char_bg" src="./resources/sec_char_bg.png" alt="ITSME:">
 
-        <div class="row">
-          <div class="col-1"></div>
-
-          <div class="col-2">
+        <div class="row" id="char_container">
+          <div class="col-4" id="char_tab_container">
             <div class="list-group bg-transparent" id="myTab" role="tablist">
               <a class="list-group-item list-group-item-action active" id="tab_char_01" data-bs-toggle="list" href="#list-char_01" role="tab" aria-controls="list-home">
                 <img id="list-tab-item" src="./resources/char_default_01.png" alt="ITSME:">
@@ -184,93 +182,94 @@
             </div>
           </div>
 
-          <div class="col-1"></div>
-
-          <div class="col-7">
-            <div class="tab-content" id="text_story_box">
-              <div class="tab-pane fade show active" id="list-char_01" role="tabpanel" aria-labelledby="list-char_01">
-                <p id="char_story_name">
-                  아미 Ami
-                </p>
-                <span id="char_story_content">
-                  “고생은 싫지만, 무시당하지 않았으면 좋겠어.”
-                  <br>
-                  <br>
-                  서울 이태원에 사는 스물 일곱 살 아미(Ami)<br>
-                  9 to 6 중소기업에서 일하고, 퇴근 후엔 악세서리 판매를 부업으로 하고 있다.<br>
-                  돈을 많이 벌어 조기 은퇴하는 게 꿈이지만, ‘현재’에는 충실한 편이다.<br>
-                  한 때는 경찰 공무원이 되고 싶어 오랫동안 복싱을 했다.<br>
-                  열심히 했더니 얼마 전 아마추어 복싱 선발전에 나가보라는 제안도 받았다.<br>
-                  일주일에 하루는 디자인 학원을, 이틀은 발레 학원에 간다.<br>
-                  늦은 밤, 이별한 친구 연락을 받으면 달려가서 껴안아 준다. ESTJ.<br>
-                  올해 목표는 이직. 성공하면 스스로에게 오키나와 여행 티켓을 선물할 예정이다.
-                </span>
-              </div>
-              <div class="tab-pane fade" id="list-char_02" role="tabpanel" aria-labelledby="list-char_02">
-                <p id="char_story_name">
-                  희도 Hee-do
-                </p>
-                <span id="char_story_content">
-                  “기왕 하는 일, 야무지게 하고 조용히 쉬자.”
-                  <br>
-                  <br>
-                  화장품 수출 회사 새내기 직원 희도(Hee-Do). 조용한 성격의 노력파.<br>
-                  어느 날 회사 대표가 오면서 업무를 조정한다며, 희도를 디지털 마케팅 부서로 보낸다.<br>
-                  “희도 씨 혹시 인스타그램 해요? 디지털 마케팅 하려면 앞으로 소셜미디어와도 친해져야 하니까 한번 운영해 보세요. 인사이트 얻을 게 많을 거에요.”
-                  사실 희도는 코로나19 시기 인스타그램을 ‘끊었다.’<br>
-                  다른 사람의 모습을 보면 부러워하는 마음이 들어서다.<br>
-                  뭐 어쩌겠어. 일은 일이니까, 싫어도 해낸다. 전형적인 ISFJ.<br>
-                  인스타 팔로워 1만 명 만들기 목표가 생겼다.
-                </span>
-              </div>
-              <div class="tab-pane fade" id="list-char_03" role="tabpanel" aria-labelledby="list-char_03">
-                <p id="char_story_name">
-                  사라 Sarah
-                </p>
-                <span id="char_story_content">
-                  “이끼로 덮인 숲에서 사랑하고 싶어.”
-                  <br>
-                  <br>
-                  이끼를 사랑하는 박사 후 연구원. 최초 식물인 이끼를 연구해 숲을 키우는 기술을 연구한다.<br>
-                  주말에는 홍대 인근에 있는 와인바에서 하는 독서 모임에 참석한다.<br>
-                  요새 읽는 책은 모 작가의 SF 소설집. 인상적인 문장을 연구실 모니터에 써 붙였다.<br>
-                  [알아낸 사실들 이면에는 여전히 답을 알 수 없는 질문들이 있었다.]<br>
-                  마음에 드는 음악을 듣게 되면 저녁에 친구에게 보내 같이 듣자고 하는 편이다. ENTP.
-                </span>
-              </div>
-              <div class="tab-pane fade" id="list-char_04" role="tabpanel" aria-labelledby="list-char_04">
-                <p id="char_story_name">
-                  세나 Se-na
-                </p>
-                <span id="char_story_content">
-                  “의지박약이라도 운동은 계속 할거야”
-                  <br>
-                  <br>
-                  남들이 보기엔 유교걸이지만, 스트릿 댄스 마니아. 출판 편집자로 일한다.<br>
-                  취미로 하던 춤 연습에 더해 최근 목표를 하나 세웠다. 바프 촬영.<br>
-                  친구들에게 선언까지 해뒀다. 목표 달성까지 앞으로 네 달 남았다.<br>
-                  세나는 닭가슴살과 고구마를 정기 배달시키고,<br>
-                  운동을 함께 할 남사친을 찾기 위해…틴더를 깔았다. ISTJ.<br>
-                </span>
-              </div>
-              <div class="tab-pane fade" id="list-char_05" role="tabpanel" aria-labelledby="list-char_05">
-                <p id="char_story_name">
-                  효인 Hyo-in
-                </p>
-                <span id="char_story_content">
-                  “오늘에서 내일로 우아하게 걸어 가야지.”
-                  <br>
-                  <br>
-                  N년차 공무원 다인. 오늘따라 남부터미널역에서 기다려도 버스가 오질 않는다.<br>
-                  에어팟으론 프로코피예프의 ‘로미오와 줄리엣’을 듣고 있지만, 배에서는 저녁 달라고 외치는 꼬로록 소리가 요동친다.<br>
-                  야근하자는 과장 눈치도 무시하고 늦지 않으려고 기를 쓰고 달려왔다.<br>
-                  공연 시간이 다 되어 마음이 급해진 다인은 언덕을 넘어 예술의 전당까지 걷기 시작한다.<br>
-                  어떻게 구한 발레단 내한 공연 티켓인데. 연간 사업계획서에 표를 버릴 수는 없다.<br>
-                  ‘하필 이런 날 지미추 펌프스를 골랐다니. 내가 미친 년이지’<br>
-                  효인은 구두를 벗어 손에 들고 퀵보드를 탔다. 오페라극장에 겨우 도착한다.<br>
-                  다행히 아직 오보에에 맞춰 오케스트라가 조율하고 있었다. 공연장 조명이 어두워진다.<br>
-                  가쁜 숨을 내쉬면서 다인은 생각한다. ‘오늘보다는 내일 우아할거야.’ ENTJ.
-                </span>
+          <div class="col col-sm-7" id="char_box_container">
+            <div class="row" id="container_char_story">
+              <img id="char_title" src="./resources/sec_char_title.png" alt="ITSME:"/>
+              <div class="tab-content" id="text_story_box">
+                <div class="tab-pane fade show active" id="list-char_01" role="tabpanel" aria-labelledby="list-char_01">
+                  <p id="char_story_name">
+                    아미 Ami
+                  </p>
+                  <span id="char_story_content">
+                    “고생은 싫지만, 무시당하지 않았으면 좋겠어.”
+                    <br>
+                    <br>
+                    서울 이태원에 사는 스물 일곱 살 아미(Ami)<br>
+                    9 to 6 중소기업에서 일하고, 퇴근 후엔 악세서리 판매를 부업으로 하고 있다.<br>
+                    돈을 많이 벌어 조기 은퇴하는 게 꿈이지만, ‘현재’에는 충실한 편이다.<br>
+                    한 때는 경찰 공무원이 되고 싶어 오랫동안 복싱을 했다.<br>
+                    열심히 했더니 얼마 전 아마추어 복싱 선발전에 나가보라는 제안도 받았다.<br>
+                    일주일에 하루는 디자인 학원을, 이틀은 발레 학원에 간다.<br>
+                    늦은 밤, 이별한 친구 연락을 받으면 달려가서 껴안아 준다. ESTJ.<br>
+                    올해 목표는 이직. 성공하면 스스로에게 오키나와 여행 티켓을 선물할 예정이다.
+                  </span>
+                </div>
+                <div class="tab-pane fade" id="list-char_02" role="tabpanel" aria-labelledby="list-char_02">
+                  <p id="char_story_name">
+                    희도 Hee-do
+                  </p>
+                  <span id="char_story_content">
+                    “기왕 하는 일, 야무지게 하고 조용히 쉬자.”
+                    <br>
+                    <br>
+                    화장품 수출 회사 새내기 직원 희도(Hee-Do). 조용한 성격의 노력파.<br>
+                    어느 날 회사 대표가 오면서 업무를 조정한다며, 희도를 디지털 마케팅 부서로 보낸다.<br>
+                    “희도 씨 혹시 인스타그램 해요? 디지털 마케팅 하려면 앞으로 소셜미디어와도 친해져야 하니까 한번 운영해 보세요. 인사이트 얻을 게 많을 거에요.”
+                    사실 희도는 코로나19 시기 인스타그램을 ‘끊었다.’<br>
+                    다른 사람의 모습을 보면 부러워하는 마음이 들어서다.<br>
+                    뭐 어쩌겠어. 일은 일이니까, 싫어도 해낸다. 전형적인 ISFJ.<br>
+                    인스타 팔로워 1만 명 만들기 목표가 생겼다.
+                  </span>
+                </div>
+                <div class="tab-pane fade" id="list-char_03" role="tabpanel" aria-labelledby="list-char_03">
+                  <p id="char_story_name">
+                    사라 Sarah
+                  </p>
+                  <span id="char_story_content">
+                    “이끼로 덮인 숲에서 사랑하고 싶어.”
+                    <br>
+                    <br>
+                    이끼를 사랑하는 박사 후 연구원. 최초 식물인 이끼를 연구해 숲을 키우는 기술을 연구한다.<br>
+                    주말에는 홍대 인근에 있는 와인바에서 하는 독서 모임에 참석한다.<br>
+                    요새 읽는 책은 모 작가의 SF 소설집. 인상적인 문장을 연구실 모니터에 써 붙였다.<br>
+                    [알아낸 사실들 이면에는 여전히 답을 알 수 없는 질문들이 있었다.]<br>
+                    마음에 드는 음악을 듣게 되면 저녁에 친구에게 보내 같이 듣자고 하는 편이다. ENTP.
+                  </span>
+                </div>
+                <div class="tab-pane fade" id="list-char_04" role="tabpanel" aria-labelledby="list-char_04">
+                  <p id="char_story_name">
+                    세나 Se-na
+                  </p>
+                  <span id="char_story_content">
+                    “의지박약이라도 운동은 계속 할거야”
+                    <br>
+                    <br>
+                    남들이 보기엔 유교걸이지만, 스트릿 댄스 마니아. 출판 편집자로 일한다.<br>
+                    취미로 하던 춤 연습에 더해 최근 목표를 하나 세웠다. 바프 촬영.<br>
+                    친구들에게 선언까지 해뒀다. 목표 달성까지 앞으로 네 달 남았다.<br>
+                    세나는 닭가슴살과 고구마를 정기 배달시키고,<br>
+                    운동을 함께 할 남사친을 찾기 위해…틴더를 깔았다. ISTJ.<br>
+                  </span>
+                </div>
+                <div class="tab-pane fade" id="list-char_05" role="tabpanel" aria-labelledby="list-char_05">
+                  <p id="char_story_name">
+                    효인 Hyo-in
+                  </p>
+                  <span id="char_story_content">
+                    “오늘에서 내일로 우아하게 걸어 가야지.”
+                    <br>
+                    <br>
+                    N년차 공무원 다인. 오늘따라 남부터미널역에서 기다려도 버스가 오질 않는다.<br>
+                    에어팟으론 프로코피예프의 ‘로미오와 줄리엣’을 듣고 있지만, 배에서는 저녁 달라고 외치는 꼬로록 소리가 요동친다.<br>
+                    야근하자는 과장 눈치도 무시하고 늦지 않으려고 기를 쓰고 달려왔다.<br>
+                    공연 시간이 다 되어 마음이 급해진 다인은 언덕을 넘어 예술의 전당까지 걷기 시작한다.<br>
+                    어떻게 구한 발레단 내한 공연 티켓인데. 연간 사업계획서에 표를 버릴 수는 없다.<br>
+                    ‘하필 이런 날 지미추 펌프스를 골랐다니. 내가 미친 년이지’<br>
+                    효인은 구두를 벗어 손에 들고 퀵보드를 탔다. 오페라극장에 겨우 도착한다.<br>
+                    다행히 아직 오보에에 맞춰 오케스트라가 조율하고 있었다. 공연장 조명이 어두워진다.<br>
+                    가쁜 숨을 내쉬면서 다인은 생각한다. ‘오늘보다는 내일 우아할거야.’ ENTJ.
+                  </span>
+                </div>
               </div>
             </div>
           </div>

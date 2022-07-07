@@ -448,28 +448,112 @@ w/* carousel */
     }
 }
 
+@media screen and (min-width: 576px) {
+    #char_tab_container {
+        position: relative;
+        min-height: 1000px;
+    }
 
+    #myTab {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
-#text_story_box {
-    box-sizing: border-box;
+    #container_char_story {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 16px;
-    gap: 8px;
+    #char_title {
+        position:relative;
+        margin: 0 0 3rem auto;
+        width:auto;
+    }
 
-    background: #FFFFFF;
-    opacity: 0.95;
-    border: 2px solid #0F2D90;
-    backdrop-filter: blur(4px);
-    /* Note: backdrop-filter has minimal browser support */
+    #text_story_box {
+        position: relative;
+        top: 32%;
+    
+        margin-right: 2rem;
+    
+        box-sizing: border-box;
+    
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 8px;
+    
+        background: #FFFFFF;
+        opacity: 0.95;
+        border: 2px solid #0F2D90;
+        backdrop-filter: blur(4px);
+        /* Note: backdrop-filter has minimal browser support */
+    
+        border-radius: 16px;
+        z-index: 2;
+    }
+}
 
-    border-radius: 16px;
-    z-index: 2;
+@media screen and (max-width: 575px) {
+    #char_tab_container {
+        position: relative;
+        min-height: 700px;
+    }
 
-    font-size: 14px;
+    #myTab {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #container_char_story {
+        position: absolute;
+        width: 90%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #char_title {
+        position:relative;
+        margin: 0 0 3rem auto;
+        width:auto;
+
+        display: none;
+        /* visibility: hidden; */
+    }
+
+    #text_story_box {
+        position: relative;
+    
+        margin-right: 2rem;
+    
+        box-sizing: border-box;
+    
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 8px;
+    
+        background: #FFFFFF;
+        opacity: 0.95;
+        border: 2px solid #0F2D90;
+        backdrop-filter: blur(4px);
+        /* Note: backdrop-filter has minimal browser support */
+    
+        border-radius: 16px;
+        z-index: 2;
+    }
+}
+
+#char_box_container {
+    position: relative;
+    min-height: 500px;
 }
 
 #list-char_01
@@ -495,9 +579,9 @@ w/* carousel */
 #tab_char_03:focus,
 #tab_char_04:focus,
 #tab_char_05:focus {
-    backgrou-color: transparent;
+    background-color: transparent;
     border:one;
-    z-ind: 0;
+    z-index: 0;
 }
 
 #tab_char_01:hover,
