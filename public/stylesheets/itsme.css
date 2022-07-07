@@ -75,15 +75,75 @@
     margin: 0 auto;
 }
 
-#sec_root_story {
+@media screen and (min-width: 576px) {
+    #sec_root_story {
+        background-color: #91ACFF;
+        background-image: url("../resources/sec_story_bg_top.png"), url("../resources/sec_story_bg_bottom.png");
+        background-repeat:repeat-x, repeat-x;
+        background-position: center top, center bottom;
+
+        min-height: 620px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #sec_root_story {
+        background-color: #91ACFF;
+        background-image: url("../resources/sec_story_bg_left.png"), url("../resources/sec_story_bg_right.png");
+        background-repeat:repeat-y, repeat-y;
+        background-position: left center, right center;
+
+        min-height: 620px;
+    }
+}
+
+
+#sec_content_story {
     max-width: 1116px;
     min-width: 360px;
+
+    min-height: 620px;
+
+    position:relative;
+}
+
+#sec_root_artist {
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+#sec_content_artist {
+    max-width: 1116px;
+    min-width: 360px;
+
     position:relative;
     margin: 0 auto;
+}
 
-    background-color: #91ACFF;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+#text_artist_intro {
+    position: relative;
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: left;
+    color: #0F2D90;
+}
+
+#container_artworks {
+    position: relative;
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+}
+
+#row_artworks {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
 }
 
 
@@ -625,7 +685,13 @@ w/* carousel */
 @media screen and (min-width: 576px) {
     #grid-container {
         display: grid;
-        gap: 20px;
+
+        position:absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        row-gap: 4rem;
+        column-gap: 2rem;
         grid-template-columns: repeat(2, 1fr);
     }    
     
@@ -652,19 +718,29 @@ w/* carousel */
      #grid-3 {
         position: relative;
         text-align: center;
+
+        width: 345px;
+        height: 111px;
      }
 }
 
 @media screen and (max-width: 575px) {
     #grid-container {
         display: grid;
+        
+        position:absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        row-gap: 4rem;
+        column-gap: 2rem;
     }    
 
     #grid-1  {
         font-family: 'Apple SD Gothic Neo';
         font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
+        font-weight: 900;
+        font-size: 14px;
         line-height: 160%;
         color: #0F2D90;
 
@@ -674,8 +750,8 @@ w/* carousel */
      #grid-2 {
         font-family: 'Apple SD Gothic Neo';
         font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
+        font-weight: 900;
+        font-size: 14px;
         line-height: 160%;
         color: #0F2D90;
     
@@ -685,7 +761,11 @@ w/* carousel */
      #grid-3 {
         position: relative;
         grid-column: span 2;
-        text-align: right;
+
+        width: 260px;
+        height: 91px;
+        
+        margin: 0 auto;
      }
      
 }
