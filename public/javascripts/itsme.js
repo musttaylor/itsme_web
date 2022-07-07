@@ -19,20 +19,23 @@
         }
     })
 
-    document.getElementById('list-home-list').addEventListener('click',() => {        
-        char_selected('list-home-list')
+    // 기본으로 첫 번째 탭 선택
+    char_selected('tab_char_01')
+
+    document.getElementById('tab_char_01').addEventListener('click',() => {        
+        char_selected('tab_char_01')
     })
-    document.getElementById('list-profile-list').addEventListener('click',() => {        
-        char_selected('list-profile-list')
+    document.getElementById('tab_char_02').addEventListener('click',() => {        
+        char_selected('tab_char_02')
     })
-    document.getElementById('list-messages-list').addEventListener('click',() => {        
-        char_selected('list-messages-list')
+    document.getElementById('tab_char_03').addEventListener('click',() => {        
+        char_selected('tab_char_03')
     })
-    document.getElementById('list-settings-list').addEventListener('click',() => {        
-        char_selected('list-settings-list')
+    document.getElementById('tab_char_04').addEventListener('click',() => {        
+        char_selected('tab_char_04')
     })
-    document.getElementById('list-settings2-list').addEventListener('click',() => {        
-        char_selected('list-settings2-list')
+    document.getElementById('tab_char_05').addEventListener('click',() => {        
+        char_selected('tab_char_05')
     })
     
     document.forms["contact-form"].addEventListener("submit", async (event) => {        
@@ -55,18 +58,28 @@
 
 
 function char_selected(id) {
-    var tabList = ['list-home-list', 'list-profile-list', 'list-messages-list', 'list-settings-list', 'list-settings2-list'];
+    var tabList = [
+        ['tab_char_01', 'char_default_01', 'char_selected_01'],
+        ['tab_char_02', 'char_default_02', 'char_selected_02'],
+        ['tab_char_03', 'char_default_03', 'char_selected_03'],
+        ['tab_char_04', 'char_default_04', 'char_selected_04'],
+        ['tab_char_05', 'char_default_05', 'char_selected_05']
+    ];
+     
+     //   'list-profile-list', 'list-messages-list', 'list-settings-list', 'list-settings2-list'];
 
     for (var idx in tabList) {
-        var tempId = tabList[idx]; 
+        var tempData = tabList[idx]
+        var tempId = tempData[0]; 
         //console.log(tempId);
         let charTab = document.getElementById(tempId.toString());
         let charImg = charTab.querySelector('#list-tab-item');
 
         if (tempId == id) {
-            charImg.setAttribute('style','background-image: url("./resources/char_selected_s.png"); background-repeat: no-repeat; background-position: center;');
+            //charImg.setAttribute('style','background-image: url("./resources/char_selected_s.png"); background-repeat: no-repeat; background-position: center;');
+            charImg.setAttribute('src','./resources/' + tempData[2].toString() + '.png');
         } else {
-            charImg.setAttribute('style','background-image: none;');
+            charImg.setAttribute('src','./resources/' + tempData[1].toString() + '.png');
         }
     }
 }
