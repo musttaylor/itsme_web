@@ -1,0 +1,147 @@
+#sec_root_intro {
+    background-color: #E84C47;
+    background-image: url("../resources/nav_bg__toggled.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-bottom: 2rem;
+}
+
+#sec_content_intro {
+    max-width: 1116px;
+    min-width: 360px;
+    position:relative;
+    margin: 0 auto;
+}
+
+
+/* nav */
+#nav_button {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.32px;
+    color: #0F2D90;
+}
+
+#nav_container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    height: 100%;
+
+    max-width: 1116px;
+    min-width: 360px;
+    position:relative;
+    margin: 0 auto;
+}
+
+#nav_inner_container {
+    padding-right: 1rem;
+
+    position: absolute; 
+    margin-top: 0px; 
+    right: 0px;
+}
+
+
+/* intro-text */
+@media screen and (min-width: 576px) {
+    #text_intro {
+        position: inherit;
+        font-family: 'AppleSDGothicNeoM';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 180%;
+        text-align: center;
+        color: #FFFFFF;
+
+        max-width: 513px;
+    
+        margin-top: 2rem;
+    }
+
+    .text_bordered {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 2.72356px 5.44712px;
+        margin-left: 3.63px;
+        margin-right: 3.63px;
+        margin-bottom: 0;
+        
+        background: #FFFFFF;
+        border-radius: 18.1571px;
+    
+        font-family: 'AppleSDGothicNeoM';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 180%;
+        /* identical to box height, or 20px */
+    
+        text-align: center;
+        color: #000000;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #text_intro {
+        position: inherit;
+        font-family: 'AppleSDGothicNeoM';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 180%;
+        text-align: center;
+        color: #FFFFFF;
+
+        max-width: 356px;
+    
+        margin-top: 2rem;
+    }
+
+    .text_bordered {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 2.72356px 5.44712px;
+        margin-left: 3.63px;
+        margin-right: 3.63px;
+        margin-bottom: 0;
+        
+        background: #FFFFFF;
+        border-radius: 18.1571px;
+
+        font-family: 'AppleSDGothicNeoM';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10.8942px;
+        line-height: 180%;
+    
+        text-align: center;
+        color: #000000;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+}
+
+
+#text_bordered_containder {
+    position: inherit;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}

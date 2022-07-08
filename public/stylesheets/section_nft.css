@@ -1,0 +1,51 @@
+
+
+#sec_root_nft {
+    background-color: white;
+    position: relative;
+    height: 800px;
+    padding-top: 3rem;
+}
+
+#sec_content_nft {
+    max-width: 1116px;
+    min-width: 360px;
+    height: auto;
+    position:relative;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width: 576px) {
+    #img_nft_bg {
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        object-fit: cover;
+    
+        display: block;
+        content: url(../resources/nft_bg.png);
+        max-width: 1116px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #img_nft_bg {
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        object-fit: cover;
+    
+        display: block;
+        content: url(../resources/nft_bg_s.png);
+        max-width: 1116px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}

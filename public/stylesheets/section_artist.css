@@ -1,0 +1,86 @@
+
+#sec_root_artist {
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+#sec_content_artist {
+    max-width: 1116px;
+    min-width: 360px;
+
+    position:relative;
+    margin: 0 auto;
+}
+
+
+#sec_artist_img_container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 924px;
+}
+
+#title_artist {
+    position: relative;
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+}
+
+#logo_artist {
+    position: relative;
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+}
+
+#text_artist_intro {
+    position: relative;
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+
+    font-family: '../resources/fonts/AppleSDGothicNeoM';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: left;
+    color: #0F2D90;
+
+    max-width: 924px;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#container_artworks {
+    position: relative;
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+    max-width: 1116px;
+}
+
+#row_artworks {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+
+    row-gap: 2rem;
+}
+
+
+#artwork_title {
+    font-family: 'AppleSDGothicNeoM';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    /* or 22px */
+    color: #000000;
+
+    margin-top: 0.5rem;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

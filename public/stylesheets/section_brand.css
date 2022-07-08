@@ -1,0 +1,129 @@
+
+@media screen and (min-width: 576px) {
+    #sec_root_brand {
+        background-color: #91ACFF;
+
+        position:relative;
+        padding-top: 16rem;
+        padding-bottom: 9rem;
+    }
+
+    #sec_brand_bg {
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        object-fit: cover;
+
+        display: block;
+        content: url(../resources/bg_sec_brand.png);
+        max-width: 1116px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #sec_root_brand {
+        background-color: #91ACFF;
+
+        position:relative;
+        padding-top: 8rem;
+        padding-bottom: 6rem;
+    }
+
+    #sec_brand_bg {
+        display: none;
+    }
+}
+
+#sec_content_brand {
+    max-width: 1116px;
+    min-width: 360px;
+    position:relative;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width: 576px) {
+    #img_title_section_2 {
+        position:relative;
+
+        width: 209px;
+        height: 39px;
+    }
+
+    #text_sub_title_section_2 {
+        position:relative;
+        margin-bottom: 2rem;
+
+        max-width: 963px;
+        margin: 2rem auto 3rem auto;
+
+        font-family: 'AppleSDGothicNeoM';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 180%;
+        text-align: center;
+        color:#0F2D90;
+    }
+        
+    #text_desc_section_2 {
+        position:relative;
+        margin-bottom: 2rem;
+
+        max-width: 963px;
+        
+        font-family: 'AppleSDGothicNeoM';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 180%;
+        text-align: center;
+        color: #FEFFFF;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    #img_title_section_2 {
+        position:relative;
+
+        width: 138px;
+        height: 26px
+    }
+
+    #text_sub_title_section_2 {
+        position:relative;
+        margin-bottom: 2rem;
+
+        max-width: 356px;
+        margin: 2rem auto;
+
+        font-family: 'AppleSDGothicNeoM';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 180%;
+        text-align: center;
+        color:#0F2D90;
+    }
+        
+    #text_desc_section_2 {
+        position:relative;
+        margin-bottom: 2rem;
+
+        max-width: 356px;
+        
+        font-family: 'AppleSDGothicNeoM';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 180%;
+        text-align: center;
+        color: #FEFFFF;
+    }
+
+}

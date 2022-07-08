@@ -1,0 +1,150 @@
+/* ------------ TTF Fonts ------------ */
+@font-face {
+    font-family:'GothamBold';
+    src: url('../resources/fonts/GothamBold.ttf') format('truetype');
+    }
+
+@font-face {
+    font-family:'GothamBoldItalic';
+    src: url('../resources/fonts/GothamBoldItalic.ttf') format('truetype');
+    }
+
+@font-face {
+    font-family:'GothamBook';
+    src: url('../resources/fonts/GothamBook.ttf') format('truetype');
+    }
+    
+@font-face {
+    font-family:'GothamBookItalic';
+    src: url('../resources/fonts/GothamBookItalic.ttf') format('truetype');
+    }
+    
+@font-face {
+    font-family:'GothamLight';
+    src: url('../resources/fonts/GothamLight.ttf') format('truetype');
+    }
+    
+@font-face {
+    font-family:'GothamLightItalic';
+    src: url('../resources/fonts/GothamLightItalic.ttf') format('truetype');
+    }
+    
+@font-face {
+    font-family:'GothamMedium';
+    src: url('../resources/fonts/GothamMedium.ttf') format('truetype');
+    }
+        
+@font-face {
+    font-family:'GothamMedium_1';
+    src: url('../resources/fonts/GothamMedium_1.ttf') format('truetype');
+    }
+        
+@font-face {
+    font-family:'GothamMediumItalic';
+    src: url('../resources/fonts/GothamMediumItalic.ttf') format('truetype');
+    }
+
+    
+/* ------------ OTF Fonts :: Apple SD Gothic Neo ------------ */
+@font-face {
+    font-family:'AppleSDGothicNeoB';
+    src: url('../resources/fonts/AppleSDGothicNeoB.otf') format('opentype');
+    }
+
+@font-face {
+    font-family:'AppleSDGothicNeoEB';
+    src: url('../resources/fonts/AppleSDGothicNeoEB.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'AppleSDGothicNeoH';
+    src: url('../resources/fonts/AppleSDGothicNeoH.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'AppleSDGothicNeoL';
+    src: url('../resources/fonts/AppleSDGothicNeoL.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'AppleSDGothicNeoM';
+    src: url('../resources/fonts/AppleSDGothicNeoM.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'AppleSDGothicNeoR';
+    src: url('../resources/fonts/AppleSDGothicNeoR.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'AppleSDGothicNeoSB';
+    src: url('../resources/fonts/AppleSDGothicNeoSB.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'AppleSDGothicNeoT';
+    src: url('../resources/fonts/AppleSDGothicNeoT.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'AppleSDGothicNeoUL';
+    src: url('../resources/fonts/AppleSDGothicNeoUL.otf') format('opentype');
+    }
+    
+/* ------------ OTF Fonts :: Gotham ------------ */
+@font-face {
+    font-family:'Gotham-Black';
+    src: url('../resources/fonts/Gotham-Black.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'Gotham-Bold';
+    src: url('../resources/fonts/Gotham-Bold.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'Gotham-BookItalic';
+    src: url('../resources/fonts/Gotham-BookItalic.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'Gotham-Light';
+    src: url('../resources/fonts/Gotham-Light.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'Gotham-Thin';
+    src: url('../resources/fonts/Gotham-Thin.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'Gotham-ThinItalic';
+    src: url('../resources/fonts/Gotham-ThinItalic.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'Gotham-UltraItalic';
+    src: url('../resources/fonts/Gotham-UltraItalic.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'Gotham-XLight';
+    src: url('../resources/fonts/Gotham-XLight.otf') format('opentype');
+    }
+    
+@font-face {
+    font-family:'Gotham-XLightItalic';
+    src: url('../resources/fonts/Gotham-XLightItalic.otf') format('opentype');
+    }
+    
+
+
+/* font web importing sample */
+/* 
+@font-face {
+font-family: 'SDSamliphopangche_Outline';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+ */

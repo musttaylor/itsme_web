@@ -1,0 +1,79 @@
+#sec_root_goods {
+    background-color: #ffffff;
+    padding-top: 3rem;
+}
+
+#sec_content_goods {
+    max-width: 1116px;
+    min-width: 360px;
+    position:relative;
+    margin: 0 auto;
+}
+
+
+#sec_goods_title_container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 924px;
+}
+
+@media screen and (min-width: 576px) {
+    #title_goods {
+        position: relative;
+        margin: 2rem 0 2rem 0;
+        padding: 0;
+        content: url(../resources/sec_goods_title.png);
+    }
+
+    #text_goods_intro {
+        position: relative;
+        margin: 2rem 0 2rem 0;
+        padding: 0;
+    
+        font-family: '../resources/fonts/AppleSDGothicNeoM';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 160%;
+        text-align: left;
+        color: #0F2D90;
+    
+        max-width: 924px;
+    
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+    #title_goods {
+        position: relative;
+        margin: 2rem 0 2rem 0;
+        padding: 0;
+        content: url(../resources/sec_goods_title_s.png);
+    }
+
+    #text_goods_intro {
+        position: relative;
+        margin: 2rem 0 2rem 0;
+        padding: 0;
+    
+        font-family: '../resources/fonts/AppleSDGothicNeoM';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 160%;
+        text-align: left;
+        color: #0F2D90;
+    
+        max-width: 924px;
+    
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+
+
