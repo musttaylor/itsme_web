@@ -17,37 +17,49 @@
 
 
 
+
+
 @media screen and (min-width: 576px) {
-    #sec_char_bg {
-        position: absolute;
-        
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, 0%);
-
-        display: block;
-        content: url(../resources/sec_char_bg.png);
-        max-width: 1116px;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    #sec_char_bg {
-        display: block;
-        content: url(../resources/sec_char_bg.png);
-        background-repeat: no-repeat;
-        width: auto;
-        height: 350px;
+    @media screen and (min-width: 1116px) {
+        #sec_char_bg {
+            position: absolute;
+            
+            display: block;
+            content: url(../resources/sec_char_bg_full.png);
+            background-repeat: no-repeat;
+            background-clip:inherit;
     
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin-top: 4rem;
-        object-fit: cover;
-    }
-}
+            max-width: 1116px;
+            width: 100%;
+            height: auto;
+        
+            bottom: 0;
+            left: 0px;
 
-@media screen and (min-width: 576px) {
+            object-fit: cover;
+        }
+    }
+
+    @media screen and (max-width: 1115px){
+        #sec_char_bg {
+            position: absolute;
+            
+            display: block;
+            content: url(../resources/sec_char_bg.png);
+            background-repeat: no-repeat;
+            background-clip:inherit;
+    
+            max-width: 1116px;
+            width: 100%;
+            height: auto;
+        
+            bottom: 0;
+            left: 0px;
+
+            object-fit:contain;
+        }
+    }
+    
     #char_story_name {
         font-family: 'AppleSDGothicNeoM';
         font-style: normal;
@@ -78,6 +90,18 @@
 }
 
 @media screen and (max-width: 575px) {
+    #sec_char_bg {
+        display: block;
+        content: url(../resources/sec_char_bg_s.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
     #char_story_name {
         font-family: 'AppleSDGothicNeoM';
         font-style: normal;

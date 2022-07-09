@@ -1,52 +1,61 @@
 
-
-#sec_root_nft {
-    background-color: white;
+#sec_nft_title_container {
     position: relative;
-    height: 800px;
-    padding-top: 3rem;
-}
-
-#sec_content_nft {
-    max-width: 1116px;
-    min-width: 360px;
-    height: auto;
-    position:relative;
     margin: 0 auto;
     padding: 0 1rem;
+    max-width: 924px;
 }
 
-
 @media screen and (min-width: 576px) {
-    #img_nft_bg {
-        position: absolute;
-        top: -50%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        object-fit: cover;
+    #sec_root_nft {
+        background-color: white;
+        position: relative;
+        padding-top: 1rem;
+    }
     
-        display: block;
-        content: url(../resources/nft_bg.png);
-        max-width: 1116px;
-        width: 100%;
-        height: auto;
+    #title_nft {
+        position: relative;
+        padding: 0;
+        
+        display: none;
+    }
+
+    #sec_nft_bg {
+        position: relative;
         margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        max-width: 1116px;
+        min-height: 740px;
+
+        background-image: url("../resources/nft_bg_pattern.png");
+        background-repeat: repeat-x;
+        background-position: center;
     }
 }
 
 @media screen and (max-width: 575px) {
-    #img_nft_bg {
-        position: absolute;
-        top: -50%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        object-fit: cover;
-    
-        display: block;
-        content: url(../resources/nft_bg_s.png);
-        max-width: 1116px;
-        width: 100%;
-        height: auto;
+    #sec_root_nft {
+        background-color: white;
+        position: relative;
+        padding-top: 3rem;
+    }
+
+    #title_nft {
+        position: relative;
+        padding: 0;
+    }
+
+    #sec_nft_bg {
+        position: relative;
         margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        min-width: 380px;
+        min-height: 615px;
+
+        background-image: url("../resources/nft_bg_s.png");
+        background-repeat: repeat-x;
+        background-position: center;
     }
 }
