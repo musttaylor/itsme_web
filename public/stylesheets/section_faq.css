@@ -1,7 +1,128 @@
+#sec_content_faq {
+   max-width: 1116px;
+   min-width: 360px;
+   position:relative;
+   margin: 0 auto;
+   padding: 0 1rem;
+}
 
+#sec_faq_title_container {
+   position: relative;
+   margin: 0 auto;
+   padding: 0;
+   max-width: 924px;
+}
 
- #accordionFlushExample {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
- }
+@media screen and (min-width: 576px) {
+   #sec_root_faq {
+      background-color: #FF8175;
+      padding-top: 5rem;
+   }
+   
+   #title_faq {
+       position: relative;
+       margin: 2rem 0 2rem 0;
+       padding: 0;
+       content: url(../resources/sec_faq_title.png);
+   }
+      
+   #accordionFlushExample {
+      margin: 0 auto;
+      position: relative;
+
+      padding: 4rem 0 7.5rem 0;
+      max-width: 736px;
+   }
+
+   #faq_header{
+      border-radius: 20px;
+      background-color: #ffffff;
+      border-color: #ffffff;
+      box-shadow: none;
+
+      font-family: 'AppleSDGothicNeoM';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 23px;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.32px;
+
+      color: #212529;
+   }
+
+   #faq_body {
+      font-family: 'AppleSDGothicNeoM';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 23px;
+      letter-spacing: -0.32px;
+
+      color: #212529;
+   }
+}
+
+@media screen and (max-width: 575px) {
+   #sec_root_faq {
+      background-color: #FF8175;
+      padding-top: 6rem;
+   }
+
+   #title_faq {
+       position: relative;
+       margin: 2rem 0 2rem 0;
+       padding: 0;
+       content: url(../resources/sec_faq_title_s.png);
+   }
+   
+   #accordionFlushExample {
+      margin: 0 auto;
+      position: relative;
+
+      padding: 2rem 0 9rem 0;
+      max-width: 736px;
+
+      gap: 2rem;
+   }
+
+   #faq_header{
+      border-radius: 20px;
+      background-color: #ffffff;
+      border-color: #ffffff;
+      box-shadow: none;
+
+      font-family: 'AppleSDGothicNeoM';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.32px;
+
+      color: #212529;
+   }
+
+   #faq_body {
+      font-family: 'AppleSDGothicNeoM';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: -0.32px;
+
+      color: #212529;
+   }
+}
+
+.accordion-button:after {
+   background-image: url("../resources/chevron-down.svg");
+   margin-right: 0;
+   color: #000000;
+}
+
+.accordion-button:not(.collapsed)::after {
+   background-image: url("../resources/chevron-down.svg");
+}

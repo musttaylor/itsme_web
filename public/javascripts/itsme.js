@@ -1,23 +1,26 @@
 // Custom JS
 
 (()=> {
+    // nav_toggle
     document.querySelector('.navbar-toggler').addEventListener('click',() => {        
-        let navBtn = document.querySelector('.navbar-collapse')
-        let status = navBtn.style.display
-        navBtn.style.display = (status == 'block') ? 'none' : 'block'
-        
-        if (navBtn.style.display == 'block') {
-            // toggled
-            document.getElementById('toggle-btn').setAttribute('src','./resources/button_nav_toggle_x.png');
-            document.getElementById('nav_container').setAttribute('style','background-color: #ffffff; background-image: url("./resources/nav_bg__toggled.png"); background-repeat: no-repeat; background-position: right top;');
-            document.getElementById('nav_inner_container').setAttribute('style','position: relative; margin-top: 50px;');
-        } else {
-            // default
-            document.getElementById('toggle-btn').setAttribute('src','./resources/button_nav_toggle.png');
-            document.getElementById('nav_container').setAttribute('style','background-color: transparent; background-image: none');
-            document.getElementById('nav_inner_container').setAttribute('style','position: absolute; margin-top: 0px; right: 0px;');
-        }
+        nav_toggle()
     })
+
+    // nav link-toggle
+    document.getElementById('nav_button_brand').addEventListener('click',() => {        
+        nav_toggle()
+    })
+
+    document.getElementById('nav_button_char').addEventListener('click',() => {        
+        nav_toggle()
+    })
+    document.getElementById('nav_button_goods').addEventListener('click',() => {        
+        nav_toggle()
+    })
+    document.getElementById('nav_button_faq').addEventListener('click',() => {        
+        nav_toggle()
+    })
+    
 
     // 기본으로 첫 번째 탭 선택
     char_selected('tab_char_01')
@@ -56,6 +59,23 @@
       })
     })()
 
+function nav_toggle() {
+    let navBtn = document.querySelector('.navbar-collapse')
+    let status = navBtn.style.display
+    navBtn.style.display = (status == 'block') ? 'none' : 'block'
+    
+    if (navBtn.style.display == 'block') {
+        // toggled
+        document.getElementById('toggle-btn').setAttribute('src','./resources/button_nav_toggle_x.png');
+        document.getElementById('nav_container').setAttribute('style','background-color: #ffffff; background-image: url("./resources/nav_bg__toggled.png"); background-repeat: no-repeat; background-position: right top;');
+        document.getElementById('nav_inner_container').setAttribute('style','position: relative; margin-top: 50px;');
+    } else {
+        // default
+        document.getElementById('toggle-btn').setAttribute('src','./resources/button_nav_toggle.png');
+        document.getElementById('nav_container').setAttribute('style','background-color: transparent; background-image: none');
+        document.getElementById('nav_inner_container').setAttribute('style','position: absolute; margin-top: 0px; right: 0px;');
+    }
+}
 
 function char_selected(id) {
     var tabList = [

@@ -15,7 +15,10 @@
 
 
 /* nav */
-#nav_button {
+#nav_button_brand,
+#nav_button_char,
+#nav_button_goods,
+#nav_button_faq {
     font-family: 'Gotham';
     font-style: normal;
     font-weight: 700;

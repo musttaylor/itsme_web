@@ -1,0 +1,161 @@
+#sec_root_noti {
+    background-color: #E84C47;
+}
+
+@media screen and (min-width: 576px) {
+    #sec_content_noti {
+        max-width: 355px;
+        min-width: 360px;
+        position:relative;
+        margin: 0 auto;
+        padding: 6rem 1rem;
+    }
+
+    #img_noti_logo {
+        width: 210px;
+        height: 40px;
+    }
+    
+    #text_noti_title {
+        margin: 1.5rem auto 2rem auto;
+        text-align: center;
+        color: white;
+    }
+
+    #noti_form {
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    #noti_input {
+        font-family: 'AppleSDGothicNeo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 23px;
+        letter-spacing: -0.32px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+
+        height: 48px;
+    }
+
+    #text_noti_guide {
+        font-family: 'AppleSDGothicNeoM';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 160%;
+        color: #FFFFFF;
+    }
+
+    #contact-submit {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 12px;
+        gap: 10px;
+        background: #0F2D90;
+        border-radius: 4px;
+
+        width: 100%;
+        height: 48px;
+
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+
+        letter-spacing: 0.38px;
+
+        color: #FFFFFF;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #sec_content_noti {
+        max-width: 300px;
+        min-width: 360px;
+        position:relative;
+        margin: 0 auto;
+        padding: 6rem 1rem 10rem 1rem;
+    }
+
+    #img_noti_logo {
+        width: 160px;
+        height: 30px;
+    }
+
+    #text_noti_title {
+        margin: 1rem auto 1rem auto;
+        text-align: center;
+        color: white;
+    }
+
+    #noti_form {
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    #noti_input {
+        font-family: 'AppleSDGothicNeo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: -0.32px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+
+        height: 48px;
+    }
+
+    #text_noti_guide {
+        font-family: 'Apple SD Gothic Neo';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 160%;
+        color: #FFFFFF;
+    }
+
+    #contact-submit {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 12px;
+        gap: 10px;
+        background: #0F2D90;
+        border-radius: 4px;
+
+        width: 100%;
+        height: 48px;
+
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+        letter-spacing: 0.38px;
+
+        color: #FFFFFF;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+}
