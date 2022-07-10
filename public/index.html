@@ -18,15 +18,20 @@
 
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-
-    <!-- 부트스트랩 -->
-    <!--script src="js/bootstrap.min.js"></script-->
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+    <!-- AOS 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <div id="sec_root_intro">
       <div id="sec_content_intro">
@@ -60,30 +65,75 @@
           </div>
         </nav>
 
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-inner" height="auto">
-            <div class="carousel-item active" id="carousel_item_container" height="auto">
-              <!--반복재생 테스트-->
-              <!--iframe id="carousel_item" src="https://www.youtube.com/embed/l0sg928KD5o?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=l0sg928KD5o" title="video1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
-              <iframe id="carousel_item" src="https://www.youtube.com/embed/l0sg928KD5o" title="video1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <!--img width="100"  src="..." class="d-block w-100" alt="ITSME: Video 1"-->
+
+        <!-- 중앙 컨텐츠 3차 visual story -->
+        <div class="v-story-wrap con">
+          <div class="v-story-slider" data-aos="fade-up">
+              <div class="slider-item">
+                  <a href="#" class="block">
+                      <div class="img-box block">
+                        <!--?autoplay=1&mute=1-->
+                        <iframe src="https://www.youtube.com/embed/iDjQSdN_ig8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;"></iframe>
+                      </div>
+                  </a>
+              </div>
+              <div class="slider-item">
+                  <a href="#" class="block">
+                      <div class="img-box">
+                        <iframe src="https://www.youtube.com/embed/iDjQSdN_ig8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;"></iframe>
+                      </div>
+                  </a>
+              </div>
+              <div class="slider-item">
+                  <a href="#" class="block">
+                      <div class="img-box">
+                        <iframe src="https://www.youtube.com/embed/iDjQSdN_ig8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;"></iframe>
+                      </div>
+                  </a>
+              </div>
+              <!--
+              <div class="slider-item">
+                  <a href="#" class="block">
+                      <div class="img-box">
+                          <img src="https://source.unsplash.com/random/690x386" alt="">
+                      </div>
+                      <div class="discover">
+                          <span class="discover-btn block"></span>
+                          <span class="discover-txt block">EXPLORE</span>
+                      </div>
+                  </a>
+                  <div class="v-story-desc-list">
+                      <p class="v-story-desc-tt">건강</p>
+                      <p class="v-story-desc">나쁜 스마트폰 사용 습관 버리는 방법</p>
+                  </div>
+              </div>
+              -->
+          </div>
+        </div>
+
+
+
+<!--
+        <div id="intro_carouselExampleControls" class="carousel slide" data-bs-ride="true">
+          <div id="intro_carousel_inner" class="carousel-inner" height="auto">
+            <div class="carousel-item active" id="intro_carousel_item_container" height="auto">
+              <iframe id="intro_carousel_item" src="https://www.youtube.com/embed/l0sg928KD5o" title="video1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="carousel-item" id="carousel_item_container" height="auto">
-              <iframe id="carousel_item" src="https://www.youtube.com/embed/vfnjAqZHLAw" title="video2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <!--img width="100" src="..." class="d-block w-100" alt="ITSME: Video 2"-->
+            <div class="carousel-item" id="intro_carousel_item_container" height="auto">
+              <iframe id="intro_carousel_item" src="https://www.youtube.com/embed/vfnjAqZHLAw" title="video2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="carousel-item" id="carousel_item_container" height="auto">
-              <iframe id="carousel_item" src="https://www.youtube.com/embed/mKddGdN7dEM" title="video3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <!--img width="100"  src="..." class="d-block w-100" alt="ITSME: Video 3"-->
+            <div class="carousel-item" id="intro_carousel_item_container" height="auto">
+              <iframe id="intro_carousel_item" src="https://www.youtube.com/embed/mKddGdN7dEM" title="video3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-          <button class="carousel-control-prev" id="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" id="carousel-control-prev-icon" aria-hidden="true"></span>
+          <button class="carousel-control-prev" type="button" data-bs-target="#intro_carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" id="intro_carousel-control-prev-icon" aria-hidden="true"></span>
           </button>
-          <button class="carousel-control-next" id="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" id="carousel-control-next-icon" aria-hidden="true"></span>
+          <button class="carousel-control-next" type="button" data-bs-target="#intro_carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" id="intro_carousel-control-next-icon" aria-hidden="true"></span>
           </button>
         </div>
+-->
 
         <div class="container" id="text_intro">
           <span>
@@ -130,23 +180,23 @@
           </span>
         </div>
 
-        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-inner" height="auto">
-            <div class="carousel-item active" id="carousel_item_container" height="auto">
-              <iframe id="carousel_item" src="https://www.youtube.com/embed/l0sg928KD5o" title="video1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="brand_carouselExampleControls" class="carousel slide" data-bs-ride="true">
+          <div id="brand_carousel-inner" class="carousel-inner" height="auto">
+            <div class="carousel-item active" id="brand_carousel_item_container" height="auto">
+              <iframe id="brand_carousel_item" src="https://www.youtube.com/embed/l0sg928KD5o" title="video1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="carousel-item" id="carousel_item_container" height="auto">
-              <iframe id="carousel_item" src="https://www.youtube.com/embed/vfnjAqZHLAw" title="video2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="carousel-item" id="brand_carousel_item_container" height="auto">
+              <iframe id="brand_carousel_item" src="https://www.youtube.com/embed/vfnjAqZHLAw" title="video2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="carousel-item" id="carousel_item_container" height="auto">
-              <iframe id="carousel_item" src="https://www.youtube.com/embed/mKddGdN7dEM" title="video3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="carousel-item" id="brand_carousel_item_container" height="auto">
+              <iframe id="brand_carousel_item" src="https://www.youtube.com/embed/mKddGdN7dEM" title="video3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-          <button class="carousel-control-prev" id="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" id="carousel-control-prev-icon" aria-hidden="true"></span>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" id="brand_carousel-control-prev-icon" aria-hidden="true"></span>
           </button>
-          <button class="carousel-control-next" id="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-            <span class="carousel-control-next-icon" id="carousel-control-next-icon" aria-hidden="true"></span>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" id="brand_carousel-control-next-icon" aria-hidden="true"></span>
           </button>
         </div>
       </div>
@@ -676,6 +726,14 @@
 
 <!-- Custom JS & CSS -->
 <script src="./javascripts/itsme.js"></script>
+<script src="..OwlCarousel2-2.3.4/a/assets/vendors/jquery.min.js"></script>
+<script src="jquery.min.js"></script>
+<script src="../OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+<link href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+<link href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.green.min.css" rel="stylesheet">
+
 <link href="./stylesheets/fonts.css" rel="stylesheet">
 <link href="./stylesheets/itsme.css" rel="stylesheet">
 
