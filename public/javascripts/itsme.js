@@ -13,8 +13,8 @@
 
     // 3차 visual stroy slick 적용
     $('.v-story-slider').slick({
-        dots:true,
-        draggable:false,
+        dots:false,
+        draggable:true,
         arrows:true,
         adaptiveHeight:true,
         centerMode:true,
@@ -30,7 +30,7 @@
             breakpoint: 770,
             settings: {
                 centerPadding:'0',
-                arrows:false,
+                //arrows:false,
             }
             },
         ],

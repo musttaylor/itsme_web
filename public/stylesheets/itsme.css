@@ -160,19 +160,15 @@ button {
 
 /* 커스텀 */
 .con {
-    max-width:1440px;
+    max-width:1116px;
 }
 
 .con-min-width {
-    min-width:320px;
+    min-width:360px;
 }
 
 html {
     overflow-x:hidden;
-}
-
-body {
-    height:5000px;
 }
 
 /* 중앙 컨텐츠 3차 visual story */
@@ -189,10 +185,13 @@ body {
 }
 
 .v-story-wrap .v-story-slider .slider-item {
-    max-width:690px;
+    max-width:546px;
+    min-width:356px;
     position:relative;
     margin: 0 2rem;
 }
+
+/* animation
 
 .v-story-wrap .v-story-slider .slider-item .img-box > img {
     transform-origin:50% 50%;
@@ -204,6 +203,7 @@ body {
     transform:scale(1);
     transition:transform .5s linear;
 }
+*/
 
 /* visual story 사이드 버튼 */
 .v-story-wrap .v-story-slider .slick-arrow {
@@ -232,11 +232,7 @@ body {
 }
 
 /* 중앙 컨텐츠 3차 visual story 반응형 */
-@media (max-width:1440px){
-    .v-story-wrap .v-story-slider .slider-item {
-        max-width:546px;
-    }
-    
+@media (min-width:576px){
     .v-story-wrap .v-story-slider .slick-arrow {
         top:13vw;
         width:3.5vw;
@@ -245,21 +241,31 @@ body {
     
     .v-story-wrap .v-story-slider .slick-prev {
         left:18vw;
+        background-image: url(../resources/chevron-left.png);
+        background-repeat: no-repeat;
+    }
+
+    .v-story-wrap .v-story-slider .slick-prev::before {
+        content: none;
     }
     
     .v-story-wrap .v-story-slider .slick-next {
         right:18vw;
+        background-image: url(../resources/chevron-right.png);
+        background-repeat: no-repeat;
+    }
+
+    .v-story-wrap .v-story-slider .slick-next::before {
+        content: none;
+    }
+
+
+    .v-story-wrap .v-story-slider .slick-next > img {
+        content: none;
     }
 }
 
-@media (max-width:770px){
-    .v-story-wrap .v-story-slider .slider-item {
-        max-width:100%;
-    }
-    
-    .v-story-wrap .v-story-slider .slider-item > a {
-        padding:0 6.6vw;
-    }
+@media (max-width:575px){
 }
 
 
