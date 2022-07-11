@@ -37,6 +37,7 @@
 @media screen and (min-width: 576px) {
     #grid-container {
         display: grid;
+        width: 100%;
 
         position:absolute;
         top: 50%;
@@ -70,15 +71,19 @@
      #grid-3 {
         position: relative;
         text-align: center;
+     }
 
-        width: 345px;
-        height: 111px;
+     #sec_story_logo {
+        max-width: 345px;
+        width: 100%;
+        height: auto;
      }
 }
 
 @media screen and (max-width: 575px) {
     #grid-container {
         display: grid;
+        width: 100%;
         
         position:absolute;
         top: 50%;
@@ -114,11 +119,13 @@
         position: relative;
         grid-column: span 2;
 
-        width: 260px;
-        height: 91px;
-        
-        margin: 0 auto;
+        text-align: right;
      }
-     
+
+     #sec_story_logo {
+        max-width: 260px;
+        width: 100%;
+        height: auto;
+     }
 }
  

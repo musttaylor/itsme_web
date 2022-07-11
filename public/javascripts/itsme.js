@@ -3,36 +3,62 @@
 (()=> {
     console.clear();
 
+    /* show & hide func  Test 
+    document.getElementById('testButton').addEventListener('click',() => {   
+        console.log('clicked_test');  
+        var testEl = document.getElementById('text_intro');
+        console.log('clicked_test - text_intro =' + testEl);     
+        console.log('clicked_test - text_intro.style.display =' + testEl.style.display);
+        if (testEl.style.display == "none") {
+            testEl.style.display = "block";    
+        } else {
+            testEl.style.display = "none";
+        }
+        
+    })
+    */
+
+    /*
     // animation on scroll
     AOS.init({
         //once:true,
         duration:800,
         easing: 'ease',
     });
+    */
 
 
     // 3차 visual stroy slick 적용
+
+    var screenWidth = (1116 < window.innerWidth) ? 1116 : window.innerWidth;
+    var video_width = (575 < window.innerWidth) ? 546 : 356;
+    var video_center_padding = (575 < window.innerWidth) ? (screenWidth - video_width - 50) / 2 : 0;
+
+    //console.log(window.innerWidth);
+    //console.log(screenWidth);
+    //console.log(video_width);
+    //console.log(video_center_padding);
+
+    
+
     $('.v-story-slider').slick({
         dots:false,
         draggable:true,
         arrows:true,
         adaptiveHeight:true,
         centerMode:true,
-        centerPadding:'300px',
+        //centerPadding:'20vw',
+        centerPadding: video_center_padding.toString() + 'px',
         responsive: [
+            /*
             {
-            breakpoint: 1440,
-            settings: {
-                centerPadding:'20vw',
-            }
-            },
-            {
-            breakpoint: 770,
+            breakpoint: 575,
             settings: {
                 centerPadding:'0',
                 //arrows:false,
             }
             },
+            */
         ],
     }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         /* 자바스크립트
@@ -55,9 +81,6 @@
             });
         }
     }); // 이 코드는 slick infinite 가 맨끝에서 다시 처음으로 돌아가거나 할때도 트랜지션이 적용되기 위한 코드입니다. (centerMode 에서)
-
-
-
 
     // nav_toggle
     document.querySelector('.navbar-toggler').addEventListener('click',() => {        

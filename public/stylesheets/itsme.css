@@ -50,7 +50,7 @@ a:active {
 }
 */
 
-/* 라이브러리 */
+/* 라이브러리 
 .con {
     margin:0 auto;
 }
@@ -60,11 +60,6 @@ a:active {
     display:block;
 }
 
-.row::after {
-    content:"";
-    display:block;
-    clear:both;
-}
 
 .cell {
     float:left;
@@ -157,23 +152,18 @@ button {
     padding:0;
     font-size:inherit;
 }
+*/
 
 /* 커스텀 */
-.con {
-    max-width:1116px;
-}
-
-.con-min-width {
-    min-width:360px;
-}
-
 html {
     overflow-x:hidden;
 }
 
 /* 중앙 컨텐츠 3차 visual story */
 .v-story-wrap {
-    font-size:25px;
+    max-width:1116px;
+    width: auto;
+    height: auto;
 }
 
 .v-story-wrap .v-story-slider {
@@ -185,10 +175,7 @@ html {
 }
 
 .v-story-wrap .v-story-slider .slider-item {
-    max-width:546px;
-    min-width:356px;
     position:relative;
-    margin: 0 2rem;
 }
 
 /* animation
@@ -206,66 +193,60 @@ html {
 */
 
 /* visual story 사이드 버튼 */
+
+/* 중앙 컨텐츠 3차 visual story 반응형 */
 .v-story-wrap .v-story-slider .slick-arrow {
     z-index:10;
-    top:185px;
-    width:50px;
-    height:60px;
-}
-
-.v-story-wrap .v-story-slider .slick-prev {
-    left:259px;
-}
-
-.v-story-wrap .v-story-slider .slick-next {
-    right:259px;
-    left:auto;
+    width:36px;
+    height:36px;
 }
 
 .v-story-wrap .v-story-slider .slick-arrow::before {
     display:block;
-    width:14px;
-    height:26px;
     margin:0 auto;
-    color: #000;
-    font-size: 24px;
 }
 
-/* 중앙 컨텐츠 3차 visual story 반응형 */
-@media (min-width:576px){
-    .v-story-wrap .v-story-slider .slick-arrow {
-        top:13vw;
-        width:3.5vw;
-        height:4.1vw;
-    }
+.v-story-wrap .v-story-slider .slick-prev {
+    height: 100%;
+    width: 25%;
+    background-color: transparent;
+    background-image: url(../resources/chevron-left.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.v-story-wrap .v-story-slider .slick-prev::before {
+    content: none;
+}
+
+.v-story-wrap .v-story-slider .slick-next {
+    height: 100%;
+    width: 25%;
+    background-color: transparent;
+    background-image: url(../resources/chevron-right.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    /* background-position: 50%; */
+}
+
+.v-story-wrap .v-story-slider .slick-next::before {
+    content: none;
+}
+
+@media screen and (min-width: 576px) {
+    .intro_video {
+        position: relative;
     
-    .v-story-wrap .v-story-slider .slick-prev {
-        left:18vw;
-        background-image: url(../resources/chevron-left.png);
-        background-repeat: no-repeat;
+        width: 546px;
+        height: 308px;
     }
+}
 
-    .v-story-wrap .v-story-slider .slick-prev::before {
-        content: none;
-    }
+@media screen and (max-width: 575px) {
+    .intro_video {
+        position: relative;
     
-    .v-story-wrap .v-story-slider .slick-next {
-        right:18vw;
-        background-image: url(../resources/chevron-right.png);
-        background-repeat: no-repeat;
-    }
-
-    .v-story-wrap .v-story-slider .slick-next::before {
-        content: none;
-    }
-
-
-    .v-story-wrap .v-story-slider .slick-next > img {
-        content: none;
+        width: 356px;
+        height: 200px;
     }
 }
-
-@media (max-width:575px){
-}
-
-

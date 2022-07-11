@@ -30,8 +30,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 
     <!-- AOS 플러그인 -->
+    <!--
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    -->
 
     <div id="sec_root_intro">
       <div id="sec_content_intro">
@@ -65,31 +67,24 @@
           </div>
         </nav>
 
+        <!-- show & hide func test
+        <button id="testButton" type="button">test</button>
+        -->
 
         <!-- 중앙 컨텐츠 3차 visual story -->
         <div class="v-story-wrap con">
           <div class="v-story-slider" data-aos="fade-up">
               <div class="slider-item">
-                  <a href="#" class="block">
-                      <div class="img-box block">
-                        <!--?autoplay=1&mute=1-->
-                        <iframe src="https://www.youtube.com/embed/iDjQSdN_ig8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </div>
-                  </a>
+                    <iframe class="intro_video" 
+                    src="https://www.youtube.com/embed/l0sg928KD5o?controls=1&loop=1&playlist=l0sg928KD5o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <div class="slider-item">
-                  <a href="#" class="block">
-                      <div class="img-box">
-                        <iframe src="https://www.youtube.com/embed/iDjQSdN_ig8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </div>
-                  </a>
+                    <iframe class="intro_video" 
+                    src="https://www.youtube.com/embed/vfnjAqZHLAw?controls=1&loop=1&playlist=vfnjAqZHLAw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <div class="slider-item">
-                  <a href="#" class="block">
-                      <div class="img-box">
-                        <iframe src="https://www.youtube.com/embed/iDjQSdN_ig8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </div>
-                  </a>
+                    <iframe class="intro_video" 
+                    src="https://www.youtube.com/embed/mKddGdN7dEM?controls=1&loop=1&playlist=mKddGdN7dEM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <!--
               <div class="slider-item">
@@ -185,6 +180,8 @@
             <div class="carousel-item active" id="brand_carousel_item_container" height="auto">
               <iframe id="brand_carousel_item" src="https://www.youtube.com/embed/l0sg928KD5o" title="video1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+          </div>  
+            <!--
             <div class="carousel-item" id="brand_carousel_item_container" height="auto">
               <iframe id="brand_carousel_item" src="https://www.youtube.com/embed/vfnjAqZHLAw" title="video2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -198,6 +195,7 @@
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
             <span class="carousel-control-next-icon" id="brand_carousel-control-next-icon" aria-hidden="true"></span>
           </button>
+          -->
         </div>
       </div>
     </div>
@@ -349,7 +347,7 @@
             피부가 어둡든 밝든, 난 그냥 나야!
           </div>
           <div id="grid-3" class="col order-3 order-md-3">
-            <img src="./resources/logo_me_white.png" alt="ITSME:">
+            <img id="sec_story_logo" src="./resources/logo_me_white.png" alt="ITSME:">
           </div>
         </div>
       </div>
