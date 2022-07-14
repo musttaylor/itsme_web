@@ -18,9 +18,7 @@
     }
 
     #text_footer {
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 700;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 18px;
         line-height: 180%;
         letter-spacing: -0.32px;
@@ -45,9 +43,7 @@
     }
 
     #text_footer {
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 700;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 14px;
         line-height: 180%;
         letter-spacing: -0.32px;

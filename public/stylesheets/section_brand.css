@@ -51,8 +51,8 @@
     #img_title_section_2 {
         position:relative;
 
-        width: 209px;
-        height: 39px;
+        width: 240px;
+        height: auto;
     }
 
     #text_sub_title_section_2 {
@@ -62,9 +62,7 @@
         max-width: 963px;
         margin: 2rem auto 3rem auto;
 
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoB';
         font-size: 16px;
         line-height: 180%;
         text-align: center;
@@ -77,9 +75,7 @@
 
         max-width: 963px;
         
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 16px;
         line-height: 180%;
         text-align: center;
@@ -93,7 +89,7 @@
         position:relative;
 
         width: 138px;
-        height: 26px
+        height: auto;
     }
 
     #text_sub_title_section_2 {
@@ -103,9 +99,7 @@
         max-width: 356px;
         margin: 2rem auto;
 
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoB';
         font-size: 14px;
         line-height: 180%;
         text-align: center;
@@ -118,9 +112,7 @@
 
         max-width: 356px;
         
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 14px;
         line-height: 180%;
         text-align: center;

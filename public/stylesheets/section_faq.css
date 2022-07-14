@@ -40,9 +40,7 @@
       border-color: #ffffff;
       box-shadow: none;
 
-      font-family: 'AppleSDGothicNeoM';
-      font-style: normal;
-      font-weight: 700;
+      font-family: 'AppleSDGothicNeoR';
       font-size: 19px;
       line-height: 23px;
       display: flex;
@@ -53,9 +51,7 @@
    }
 
    #faq_body {
-      font-family: 'AppleSDGothicNeoM';
-      font-style: normal;
-      font-weight: 400;
+      font-family: 'AppleSDGothicNeoR';
       font-size: 19px;
       line-height: 23px;
       letter-spacing: -0.32px;
@@ -93,9 +89,7 @@
       border-color: #ffffff;
       box-shadow: none;
 
-      font-family: 'AppleSDGothicNeoM';
-      font-style: normal;
-      font-weight: 700;
+      font-family: 'AppleSDGothicNeoR';
       font-size: 14px;
       line-height: 17px;
       display: flex;
@@ -106,9 +100,7 @@
    }
 
    #faq_body {
-      font-family: 'AppleSDGothicNeoM';
-      font-style: normal;
-      font-weight: 400;
+      font-family: 'AppleSDGothicNeoR';
       font-size: 14px;
       line-height: 17px;
       letter-spacing: -0.32px;

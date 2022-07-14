@@ -38,9 +38,7 @@
     margin: 2rem 0 2rem 0;
     padding: 0;
 
-    font-family: '../resources/fonts/AppleSDGothicNeoM';
-    font-style: normal;
-    font-weight: 600;
+    font-family: 'AppleSDGothicNeoR';
     font-size: 14px;
     line-height: 160%;
     text-align: left;
@@ -70,9 +68,7 @@
 
 
 #artwork_title {
-    font-family: 'AppleSDGothicNeoM';
-    font-style: normal;
-    font-weight: 500;
+    font-family: 'AppleSDGothicNeoR';
     font-size: 14px;
     line-height: 160%;
     /* or 22px */

@@ -33,7 +33,7 @@
             width: 100%;
             height: auto;
         
-            bottom: 0;
+            bottom: 0px;
             left: 0px;
 
             object-fit: cover;
@@ -61,9 +61,7 @@
     }
     
     #char_story_name {
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 800;
+        font-family: 'AppleSDGothicNeoB';
         font-size: 24px;
         line-height: 160%;
 
@@ -75,9 +73,7 @@
     }
 
     #char_story_content {
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 700;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 16px;
         line-height: 100%;
 

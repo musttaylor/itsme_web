@@ -203,7 +203,11 @@ function nav_toggle() {
     if (navCol.style.display == 'block') {
         // toggled
         document.getElementById('toggle-btn').setAttribute('src','./resources/button_nav_toggle_x.png');
-        document.getElementById('nav_container').setAttribute('style','background-color: #ffffff; background-image: url("./resources/nav_bg__toggled.png"); background-repeat: no-repeat; background-position: right top;');
+        if (576 <= window.innerWidth) {
+            document.getElementById('nav_container').setAttribute('style','background-color: #ffffff; background-image: url("./resources/intro_bg.png"); background-repeat: no-repeat; background-position: right top;');
+        } else {
+            document.getElementById('nav_container').setAttribute('style','background-color: #ffffff; background-image: url("./resources/intro_bg_mobile.png"); background-repeat: no-repeat; background-position: right top;');
+        }
         document.getElementById('nav_inner_container').setAttribute('style','position: relative; margin-top: 50px;');
     } else {
         // default

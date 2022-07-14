@@ -34,9 +34,7 @@
         margin: 2rem 0 2rem 0;
         padding: 0;
     
-        font-family: '../resources/fonts/AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 18px;
         line-height: 160%;
         text-align: left;
@@ -73,26 +71,20 @@
 
     #goods_card_title {
         font-family: 'GothamMedium';
-        font-style: normal;
-        font-weight: 700;
         font-size: 18px;
         line-height: 160%;
         color: #0F2D90;
     }
 
     #goods_card_desc {
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 14px;
         line-height: 160%;
         color: #000000;
     }
 
     #text_goods_guide {
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 18px;
         line-height: 160%;
         text-align: left;
@@ -113,18 +105,14 @@
     }
 
     #text_social_title {
-        font-family: 'AppleSDGothicNeo';
-        font-style: normal;
-        font-weight: 900;
+        font-family: 'AppleSDGothicNeoB';
         font-size: 24px;
         line-height: 180%;
         color: #FF8175;
     }
     
     #text_social_desc {
-        font-family: 'Apple SD Gothic Neo';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 18px;
         line-height: 160%;
         color: #FF8175;
@@ -144,9 +132,7 @@
         margin: 2rem 0 2rem 0;
         padding: 0;
     
-        font-family: '../resources/fonts/AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 14px;
         line-height: 160%;
         text-align: left;
@@ -184,26 +170,20 @@
 
     #goods_card_title {
         font-family: 'GothamMedium';
-        font-style: normal;
-        font-weight: 700;
         font-size: 18px;
         line-height: 140%;
         color: #0F2D90;
     }
 
     #goods_card_desc {
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 14px;
         line-height: 160%;
         color: #000000;
     }
     
     #text_goods_guide {
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 14px;
         line-height: 160%;
         text-align: left;
@@ -223,18 +203,14 @@
     }
 
     #text_social_title {
-        font-family: 'AppleSDGothicNeo';
-        font-style: normal;
-        font-weight: 900;
+        font-family: 'AppleSDGothicNeoB';
         font-size: 16px;
         line-height: 180%;
         color: #FF8175;
     }
     
     #text_social_desc {
-        font-family: 'Apple SD Gothic Neo';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 14px;
         line-height: 160%;
         color: #FF8175;

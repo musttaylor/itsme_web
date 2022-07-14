@@ -1,10 +1,34 @@
-#sec_root_intro {
-    background-color: #E84C47;
-    background-image: url("../resources/nav_bg__toggled.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-    padding-bottom: 2rem;
+@media screen and (min-width: 576px) {
+    #sec_root_intro {
+        background-color: #E84C47;
+        background-image: url("../resources/intro_bg.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        padding-bottom: 2rem;
+    }
+
+    #nav_title_logo {
+        width: 128px;
+        height: auto;
+    }
 }
+
+@media screen and (max-width: 575px) {
+    #sec_root_intro {
+        background-color: #E84C47;
+        background-image: url("../resources/intro_bg_mobile.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        padding-bottom: 2rem;
+    }
+
+    #nav_title_logo {
+        width: 98px;
+        height: auto;
+    }
+}
+
+
 
 #sec_content_intro {
     max-width: 1116px;
@@ -19,9 +43,7 @@
 #nav_button_char,
 #nav_button_goods,
 #nav_button_faq {
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'GothamMedium';
     font-size: 24px;
     line-height: 27px;
     /* identical to box height */
@@ -56,9 +78,7 @@
 @media screen and (min-width: 576px) {
     #text_intro {
         position: inherit;
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 16px;
         line-height: 180%;
         text-align: center;
@@ -81,9 +101,7 @@
         background: #FFFFFF;
         border-radius: 18.1571px;
     
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 12px;
         line-height: 180%;
         /* identical to box height, or 20px */
@@ -101,9 +119,7 @@
 @media screen and (max-width: 575px) {
     #text_intro {
         position: inherit;
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 14px;
         line-height: 180%;
         text-align: center;
@@ -126,9 +142,7 @@
         background: #FFFFFF;
         border-radius: 18.1571px;
 
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 10.8942px;
         line-height: 180%;
     

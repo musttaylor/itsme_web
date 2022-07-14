@@ -39,9 +39,8 @@
         display: grid;
         width: 100%;
 
-        position:absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        position:relative;
+        margin: auto auto;
 
         row-gap: 4rem;
         column-gap: 2rem;
@@ -50,33 +49,32 @@
     
     #grid-1  {
         font-family: 'AppleSDGothicNeoR';
-        font-style: normal;
-        font-weight: 800;
         font-size: 18px;
         line-height: 160%;
         color: #0F2D90;
+        grid-row: span 2;
+        width: 100%;
+
      }
     
      #grid-2 {
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 160%;
-        color: #0F2D90;
-    
-        grid-row: span 2;
+        position: relative;
+        font-family: 'AppleSDGothicNeoR';
+        width: 100%;
      }
     
      #grid-3 {
         position: relative;
         text-align: center;
+        width: 100%;
      }
 
      #sec_story_logo {
+        position: relative;
         max-width: 345px;
         width: 100%;
         height: auto;
+        margin: 0 auto;
      }
 }
 
@@ -85,37 +83,30 @@
         display: grid;
         width: 100%;
         
-        position:absolute;
-        top: 50%;
-        transform: translateY(-50%);
-
+        position:relative;
+        margin: auto auto;
+        text-align: center;
+        
         row-gap: 4rem;
         column-gap: 2rem;
     }    
 
     #grid-1  {
-        font-family: 'AppleSDGothicNeoM';
+        font-family: 'AppleSDGothicNeoR';
         font-size: 14px;
         line-height: 160%;
         color: #0F2D90;
-
-        grid-column: span 2;
      }
     
      #grid-2 {
-        font-family: 'AppleSDGothicNeoB';
+        font-family: 'AppleSDGothicNeoR';
         font-size: 14px;
         line-height: 160%;
         color: #0F2D90;
-    
-        grid-column: span 2;
      }
     
      #grid-3 {
         position: relative;
-        grid-column: span 2;
-
-        text-align: right;
      }
 
      #sec_story_logo {
