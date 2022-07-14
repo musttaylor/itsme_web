@@ -49,7 +49,7 @@
     }    
     
     #grid-1  {
-        font-family: 'AppleSDGothicNeoM';
+        font-family: 'AppleSDGothicNeoR';
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
@@ -95,8 +95,6 @@
 
     #grid-1  {
         font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 900;
         font-size: 14px;
         line-height: 160%;
         color: #0F2D90;
@@ -105,9 +103,7 @@
      }
     
      #grid-2 {
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 900;
+        font-family: 'AppleSDGothicNeoB';
         font-size: 14px;
         line-height: 160%;
         color: #0F2D90;

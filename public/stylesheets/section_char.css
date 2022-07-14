@@ -103,9 +103,7 @@
     }
 
     #char_story_name {
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 800;
+        font-family: 'AppleSDGothicNeoB';
         font-size: 16px;
         line-height: 160%;
 
@@ -117,9 +115,7 @@
     }
 
     #char_story_content {
-        font-family: 'AppleSDGothicNeoM';
-        font-style: normal;
-        font-weight: 700;
+        font-family: 'AppleSDGothicNeoR';
         font-size: 14px;
         line-height: 100%;
 

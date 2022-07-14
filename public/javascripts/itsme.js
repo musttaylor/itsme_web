@@ -1,8 +1,24 @@
 // Custom JS
 
+var g_lang = 'ko';
+
 (()=> {
     console.clear();
 
+    var type = navigator.appName;
+
+    var lang;
+    if (type=="Netscape") {
+        lang = navigator.language;
+    } else {
+        lang = navigator.userLanguage;
+    }
+
+    // 국가코드에서 앞 2글자만 자름
+    g_lang = lang.substr(0,2)
+
+    //reloc();
+    
     /* show & hide func  Test 
     document.getElementById('testButton').addEventListener('click',() => {   
         console.log('clicked_test');  
@@ -17,6 +33,14 @@
         
     })
     */
+
+    document.getElementById('testButton').addEventListener('click',() => {   
+        console.log('clicked_test');  
+        g_lang = ('ko' == g_lang) ? 'en' : 'ko';
+        console.log('clicked_test - g_lang =' + g_lang);     
+
+        reloc();
+    })
 
     /*
     // animation on scroll
@@ -89,17 +113,17 @@
 
     // nav link-toggle
     document.getElementById('nav_button_brand').addEventListener('click',() => {        
-        nav_toggle()
+        nav_menu_click()
     })
 
     document.getElementById('nav_button_char').addEventListener('click',() => {        
-        nav_toggle()
+        nav_menu_click()
     })
     document.getElementById('nav_button_goods').addEventListener('click',() => {        
-        nav_toggle()
+        nav_menu_click()
     })
     document.getElementById('nav_button_faq').addEventListener('click',() => {        
-        nav_toggle()
+        nav_menu_click()
     })
     
 
@@ -140,12 +164,43 @@
       })
     })()
 
+function reloc() {
+    var arrHref = window.location.href.split('/');
+    var curLoc = arrHref[arrHref.length-1]
+    console.log(curLoc);
+
+    // 한글인 경우 한글페이지로 이동
+    if (g_lang.toString() == "ko")
+    {
+        var newLoc = 'index.html'
+        if (curLoc != newLoc) {
+            window.location.replace(newLoc);
+        }
+    }
+    // 다른 언어인 경우 영문페이지로 이동
+    else {
+        var newLoc = 'index_en.html'
+        if (curLoc != newLoc) {
+            window.location.replace(newLoc);
+        }
+    }
+
+}
+
+function nav_menu_click() {
+    if (992 <= window.innerWidth) {
+        return;
+    }
+
+    nav_toggle()
+}
+
 function nav_toggle() {
-    let navBtn = document.querySelector('.navbar-collapse')
-    let status = navBtn.style.display
-    navBtn.style.display = (status == 'block') ? 'none' : 'block'
+    let navCol = document.querySelector('.navbar-collapse')
+    let status = navCol.style.display
+    navCol.style.display = (status == 'block') ? 'none' : 'block'
     
-    if (navBtn.style.display == 'block') {
+    if (navCol.style.display == 'block') {
         // toggled
         document.getElementById('toggle-btn').setAttribute('src','./resources/button_nav_toggle_x.png');
         document.getElementById('nav_container').setAttribute('style','background-color: #ffffff; background-image: url("./resources/nav_bg__toggled.png"); background-repeat: no-repeat; background-position: right top;');
