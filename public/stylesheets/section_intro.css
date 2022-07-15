@@ -43,7 +43,7 @@
 #nav_button_char,
 #nav_button_goods,
 #nav_button_faq {
-    font-family: 'GothamMedium';
+    font-family: 'GothamBold';
     font-size: 24px;
     line-height: 27px;
     /* identical to box height */
@@ -88,32 +88,6 @@
     
         margin-top: 2rem;
     }
-
-    .text_bordered {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 2.72356px 5.44712px;
-        margin-left: 3.63px;
-        margin-right: 3.63px;
-        margin-bottom: 0;
-        
-        background: #FFFFFF;
-        border-radius: 18.1571px;
-    
-        font-family: 'AppleSDGothicNeoR';
-        font-size: 12px;
-        line-height: 180%;
-        /* identical to box height, or 20px */
-    
-        text-align: center;
-        color: #000000;
-    
-        /* Inside auto layout */
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-    }
 }
 
 @media screen and (max-width: 575px) {
@@ -129,72 +103,113 @@
     
         margin-top: 2rem;
     }
+}
 
-    .text_bordered {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 2.72356px 5.44712px;
-        margin-left: 3.63px;
-        margin-right: 3.63px;
-        margin-bottom: 0;
+
+
+/* 중앙 컨텐츠 3차 visual story */
+.v-story-wrap {
+    max-width:1116px;
+    width: auto;
+    height: auto;
+}
+
+.v-story-wrap .v-story-slider {
+    text-align:center;
+}
+
+.v-story-wrap .v-story-slider .slick-list {
+    box-sizing:border-box;
+}
+
+.v-story-wrap .v-story-slider .slider-item {
+    position:relative;
+}
+
+/* visual story 사이드 버튼 */
+.v-story-wrap .v-story-slider .slick-arrow {
+    z-index:10;
+    width:36px;
+    height:36px;
+}
+
+.v-story-wrap .v-story-slider .slick-arrow::before {
+    display:block;
+    margin:0 auto;
+}
+
+
+@media screen and (min-width: 576px) {
+    .intro_video {
+        position: relative;
+    
+        width: 546px;
+        height: 308px;
+    }
+
         
-        background: #FFFFFF;
-        border-radius: 18.1571px;
+    .v-story-wrap .v-story-slider .slick-prev {
+        height: 100%;
+        width: 25%;
+        background-color: transparent;
+        background-image: url(../resources/chevron-left.png);
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
 
-        font-family: 'AppleSDGothicNeoR';
-        font-size: 10.8942px;
-        line-height: 180%;
+    .v-story-wrap .v-story-slider .slick-prev::before {
+        content: none;
+    }
+        
+    .v-story-wrap .v-story-slider .slick-next {
+        height: 100%;
+        width: 25%;
+        background-color: transparent;
+        background-image: url(../resources/chevron-right.png);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        
+    }
+
+    .v-story-wrap .v-story-slider .slick-next::before {
+        content: none;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .intro_video {
+        position: relative;
     
-        text-align: center;
-        color: #000000;
-    
-        /* Inside auto layout */
-        flex: none;
-        order: 0;
-        flex-grow: 0;
+        width: 356px;
+        height: 200px;
+    }
+
+        
+    .v-story-wrap .v-story-slider .slick-prev {
+        height: 100%;
+        width: 25%;
+        background-color: transparent;
+        background-image: url(../resources/chevron-left.png);
+        background-repeat: no-repeat;
+        background-position: 65%;
+    }
+
+    .v-story-wrap .v-story-slider .slick-prev::before {
+        content: none;
+    }
+        
+    .v-story-wrap .v-story-slider .slick-next {
+        height: 100%;
+        width: 25%;
+        background-color: transparent;
+        background-image: url(../resources/chevron-right.png);
+        background-repeat: no-repeat;
+        background-position: 35%;
+        
+    }
+
+    .v-story-wrap .v-story-slider .slick-next::before {
+        content: none;
     }
 }
-
-
-#text_bordered_containder {
-    position: inherit;
-    margin-top: 2rem;
-    margin-bottom: 0;
-}
-
-
-/* carousel */
-#intro_carousel_inner {
-    display: flex;
-    text-align: center;
-}
-
-#intro_carousel_item_container {
-    position: relative; /* absolute는 부모가 relative일 때 부모를 따라간다. */
-}
-  
-#intro_carousel_item {
-    margin-right: 0;
-    flex: 0 0 33.333333%;
-    display: block;
-  }
-
-#intro_carouselExampleControls {
-    position: relative;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-
-    max-width: 563px;
-}
-
-#intro_carousel-control-prev-icon {
-    background-image: url("../resources/chevron-left.png");
-}
-
-#intro_carousel-control-next-icon {
-    background-image: url("../resources/chevron-right.png");
-}
-

@@ -26,17 +26,11 @@
             
             display: block;
             content: url(../resources/sec_char_bg_full.png);
-            background-repeat: no-repeat;
-            background-clip:inherit;
     
             max-width: 1116px;
-            width: 100%;
-            height: auto;
         
             bottom: 0px;
             left: 0px;
-
-            object-fit: cover;
         }
     }
 
@@ -46,17 +40,11 @@
             
             display: block;
             content: url(../resources/sec_char_bg.png);
-            background-repeat: no-repeat;
-            background-clip:inherit;
     
             max-width: 1116px;
-            width: 100%;
-            height: auto;
         
             bottom: 0;
             left: 0px;
-
-            object-fit:contain;
         }
     }
     
@@ -89,9 +77,6 @@
     #sec_char_bg {
         display: block;
         content: url(../resources/sec_char_bg_s.png);
-        background-repeat: no-repeat;
-        width: 100%;
-        height: auto;
     
         position: absolute;
         bottom: 0;
@@ -150,6 +135,8 @@
     #text_story_box {
         position: relative;
         top: 32%;
+
+        max-height: 700;
     
         margin-right: 2rem;
     
@@ -203,6 +190,8 @@
 
     #text_story_box {
         position: relative;
+
+        max-height: 700;
     
         margin-right: 2rem;
     

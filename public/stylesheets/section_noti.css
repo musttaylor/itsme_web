@@ -1,5 +1,9 @@
 #sec_root_noti {
     background-color: #E84C47;
+
+    background-image: url("../resources/mereal_pattern_noti.png");
+    background-repeat:repeat-x;
+    background-position: bottom;
 }
 
 @media screen and (min-width: 576px) {

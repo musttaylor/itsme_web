@@ -81,7 +81,16 @@
         text-align: center;
         color: #FEFFFF;
     }
+        
+    #brand_video {
+        position: relative;
+        
+        left: 50%;
+        transform: translateX(-50%);
 
+        width: 525px;
+        height: 297px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -119,42 +128,19 @@
         color: #FEFFFF;
     }
 
+    #brand_video {
+        position: relative;
+        
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 356px;
+        height: 201px;
+    }
+
 }
 
-
-/* carousel */
-#brand_carousel-inner {
-    text-align: center;
-}
-
-#brand_carousel_item_container {
-    position: relative; /* absolute는 부모가 relative일 때 부모를 따라간다. */
-    width: 86%;
-    height: 86%;
-    padding-right: 72%; /* (100% - (14x2)% */
-    padding-bottom: 56.25%; /* 16:9 비율 */
-  }
-  
-#brand_carousel_item {
-    position: absolute;
-    width: 100%; /* 부모에 맞게 꽉 채운다. */
-    height: 100%;
-  }
-
-#brand_carouselExampleControls {
+#brand_video_container {
     position: relative;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-
-    max-width: 563px;
-}
-
-#brand_carousel-control-prev-icon {
-    background-image: url("../resources/chevron-left.png");
-}
-
-#brand_carousel-control-next-icon {
-    background-image: url("../resources/chevron-right.png");
+    margin: 0 auto;
 }

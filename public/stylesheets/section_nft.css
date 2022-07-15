@@ -26,11 +26,11 @@
         padding: 0;
         width: 100%;
         max-width: 1116px;
-        min-height: 740px;
+        min-height: 606px;
 
         background-image: url("../resources/nft_bg_pattern.png");
-        background-repeat: repeat-x;
         background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
@@ -38,7 +38,7 @@
     #sec_root_nft {
         background-color: white;
         position: relative;
-        padding-top: 3rem;
+        padding-top: 4rem;
     }
 
     #title_nft {
@@ -48,14 +48,13 @@
 
     #sec_nft_bg {
         position: relative;
-        margin: 0 auto;
-        padding: 0;
+        margin: 1rem auto 0;
         width: 100%;
-        min-width: 380px;
-        min-height: 615px;
+        min-width: 390px;
 
-        background-image: url("../resources/nft_bg_s.png");
-        background-repeat: repeat-x;
-        background-position: center;
+        content: url("../resources/nft_bg_s.png");
+
+        object-fit:cover;
+
     }
 }
