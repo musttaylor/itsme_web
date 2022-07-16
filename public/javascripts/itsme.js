@@ -1,69 +1,31 @@
 // Custom JS
-
 var g_lang = 'ko';
+var b_init_lang = false;
+
+const page_ko = 'index.html';
+const page_en = 'index_en.html';
 
 (()=> {
-    console.clear();
+    //console.clear();
 
-    var type = navigator.appName;
-
-    var lang;
-    if (type=="Netscape") {
-        lang = navigator.language;
-    } else {
-        lang = navigator.userLanguage;
-    }
-
-    // 국가코드에서 앞 2글자만 자름
-    g_lang = lang.substr(0,2)
-
-    //reloc();
+    /* -------------- Set language -------------- */
+    init_lang();
     
-    /* show & hide func  Test 
     document.getElementById('testButton').addEventListener('click',() => {   
-        console.log('clicked_test');  
-        var testEl = document.getElementById('text_intro');
-        console.log('clicked_test - text_intro =' + testEl);     
-        console.log('clicked_test - text_intro.style.display =' + testEl.style.display);
-        if (testEl.style.display == "none") {
-            testEl.style.display = "block";    
-        } else {
-            testEl.style.display = "none";
-        }
-        
-    })
-    */
-
-    document.getElementById('testButton').addEventListener('click',() => {   
+    // document.getElementById('nav_button_lang').addEventListener('click',() => {   
         console.log('clicked_test');  
         g_lang = ('ko' == g_lang) ? 'en' : 'ko';
         console.log('clicked_test - g_lang =' + g_lang);     
 
-        reloc();
+        change_lang();
     })
+    
 
-    /*
-    // animation on scroll
-    AOS.init({
-        //once:true,
-        duration:800,
-        easing: 'ease',
-    });
-    */
-
-
-    // 3차 visual stroy slick 적용
+    /* -------------- Video Crousel -------------- */
 
     var screenWidth = (1116 < window.innerWidth) ? 1116 : window.innerWidth;
     var video_width = (575 < window.innerWidth) ? 546 : 356;
     var video_center_padding = (575 < window.innerWidth) ? (screenWidth - video_width - 50) / 2 : 0;
-
-    //console.log(window.innerWidth);
-    //console.log(screenWidth);
-    //console.log(video_width);
-    //console.log(video_center_padding);
-
-    
 
     $('.v-story-slider').slick({
         dots:false,
@@ -71,10 +33,9 @@ var g_lang = 'ko';
         arrows:true,
         adaptiveHeight:true,
         centerMode:true,
-        //centerPadding:'20vw',
         centerPadding: video_center_padding.toString() + 'px',
+        /*
         responsive: [
-            /*
             {
             breakpoint: 575,
             settings: {
@@ -82,10 +43,10 @@ var g_lang = 'ko';
                 //arrows:false,
             }
             },
-            */
         ],
+        */
     }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        /* 자바스크립트
+        /*
         if (currentSlide !== nextSlide) {
             document.querySelectorAll('.slick-center + .slick-cloned').forEach((next) => {
                 // timeout required or Slick will overwrite the classes
@@ -106,7 +67,9 @@ var g_lang = 'ko';
         }
     }); // 이 코드는 slick infinite 가 맨끝에서 다시 처음으로 돌아가거나 할때도 트랜지션이 적용되기 위한 코드입니다. (centerMode 에서)
 
-    // nav_toggle
+
+    /* -------------- Nav Toggle -------------- */
+
     document.querySelector('.navbar-toggler').addEventListener('click',() => {        
         nav_toggle()
     })
@@ -146,6 +109,9 @@ var g_lang = 'ko';
         char_selected('tab_char_05')
     })
     
+
+    /* -------------- Submit info -------------- */
+
     document.forms["contact-form"].addEventListener("submit", async (event) => {        
         event.preventDefault() // 이벤트를 명시적으로 처리하지 않은 경우, 해당 이벤트에 대한 사용자 에이전트의 기본 동작을 실행하지 않도록 지정
         
@@ -164,7 +130,32 @@ var g_lang = 'ko';
       })
     })()
 
-function reloc() {
+
+/* -------------- custom Funcs -------------- */
+
+function init_lang() {
+    if (true == b_init_lang) {
+        return;
+    }
+    
+    var type = navigator.appName;
+
+    var lang;
+    if (type=="Netscape") {
+        lang = navigator.language;
+    } else {
+        lang = navigator.userLanguage;
+    }
+
+    // 국가코드에서 앞 2글자만 자름
+    g_lang = lang.substr(0,2);
+    
+    change_lang();
+
+    b_init_lang = true;
+}
+
+function change_lang() {
     var arrHref = window.location.href.split('/');
     var curLoc = arrHref[arrHref.length-1]
     console.log(curLoc);
@@ -172,14 +163,14 @@ function reloc() {
     // 한글인 경우 한글페이지로 이동
     if (g_lang.toString() == "ko")
     {
-        var newLoc = 'index.html'
+        var newLoc = page_ko;
         if (curLoc != newLoc) {
             window.location.replace(newLoc);
         }
     }
     // 다른 언어인 경우 영문페이지로 이동
     else {
-        var newLoc = 'index_en.html'
+        var newLoc = page_en;
         if (curLoc != newLoc) {
             window.location.replace(newLoc);
         }

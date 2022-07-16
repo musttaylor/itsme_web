@@ -55,6 +55,7 @@
         height: auto;
     }
 
+    /*
     #text_sub_title_section_2 {
         position:relative;
         margin-bottom: 2rem;
@@ -68,12 +69,13 @@
         text-align: center;
         color:#0F2D90;
     }
+    */
         
     #text_desc_section_2 {
         position:relative;
-        margin-bottom: 2rem;
 
         max-width: 963px;
+        margin: 2rem auto 2rem auto;
         
         font-family: 'AppleSDGothicNeoR';
         font-size: 16px;
@@ -101,6 +103,7 @@
         height: auto;
     }
 
+    /*
     #text_sub_title_section_2 {
         position:relative;
         margin-bottom: 2rem;
@@ -110,20 +113,21 @@
 
         font-family: 'AppleSDGothicNeoB';
         font-size: 14px;
-        line-height: 180%;
+        line-height: 160%;
         text-align: center;
         color:#0F2D90;
     }
+    */
         
     #text_desc_section_2 {
         position:relative;
-        margin-bottom: 2rem;
 
         max-width: 356px;
+        margin: 2rem auto;
         
         font-family: 'AppleSDGothicNeoR';
         font-size: 14px;
-        line-height: 180%;
+        line-height: 160%;
         text-align: center;
         color: #FEFFFF;
     }

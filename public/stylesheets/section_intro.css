@@ -11,6 +11,21 @@
         width: 128px;
         height: auto;
     }
+    
+    #nav_button_lang {
+        border: none;
+        display: flex;
+
+        width: 36px;
+        height: 36px;
+
+        margin-left: 1rem;
+    }
+
+    #intro_video_container {
+        position: relative;
+        margin-top: 3.5rem;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -26,9 +41,22 @@
         width: 98px;
         height: auto;
     }
+    
+    #nav_button_lang {
+        border: none;
+        display: flex;
+
+        width: 36px;
+        height: 36px;
+
+        margin-top: 1rem;
+    }
+
+    #intro_video_container {
+        position: relative;
+        margin-top: 2rem;
+    }
 }
-
-
 
 #sec_content_intro {
     max-width: 1116px;
@@ -84,8 +112,6 @@
         text-align: center;
         color: #FFFFFF;
 
-        max-width: 513px;
-    
         margin-top: 2rem;
     }
 }

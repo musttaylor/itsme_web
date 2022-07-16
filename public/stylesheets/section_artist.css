@@ -51,7 +51,7 @@
     margin: 2rem 1rem 0 0;
 
     font-family: 'AppleSDGothicNeoR';
-    font-size: 18px;
+    font-size: 14px;
     line-height: 160%;
     text-align: left;
     color: #0F2D90;
@@ -75,7 +75,7 @@
 
 
 #artwork_title {
-    font-family: 'AppleSDGothicNeoR';
+    font-family: 'GothamBold';
     font-size: 14px;
     line-height: 160%;
     /* or 22px */

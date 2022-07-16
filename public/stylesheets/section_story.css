@@ -101,7 +101,6 @@
     @media screen and (max-width: 991px) {
         #grid-container {
             display: grid;
-            max-width: 520px;
             width: 100%;
     
             position:relative;

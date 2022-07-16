@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
 
-    <title>ME:REAL</title>
+    <title>me:real</title>
     <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
     <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
     <!--[if lt IE 9]>
@@ -56,6 +56,11 @@
                   <a class="nav-link" id="nav_button_faq" href="#sec_root_faq">
                     FAQ
                   </a>
+                  
+                  <!--
+                  <button id="nav_button_lang" type="button">lang test</button>
+                  <img id="" src="./resources/global.png" alt="ITSME:"/>
+                  -->
                   <!--a class="nav-link disabled">Disabled</a-->
                 </div>
               </div>
@@ -63,10 +68,10 @@
         </nav>
 
         <!-- show & hide func test-->
-        <button id="testButton" type="button">lang test</button>
+        <button style="display: none;" id="testButton" type="button">lang test</button>
         
 
-        <div class="v-story-wrap con">
+        <div class="v-story-wrap con" id="intro_video_container">
           <div class="v-story-slider" data-aos="fade-up">
               <div class="slider-item">
                     <iframe class="intro_video" 
@@ -85,10 +90,17 @@
 
         <div class="container" id="text_intro">
           <span>
-            ITSME는 easy-D작가와 머스트게임즈가 NFT 시장에 처음 던지는 도전장입니다.
-            그림 속 여성은 단순한 피사체이기를 거부합니다.
-            세상이 바라는 미의 기준, 여성성의 기준에 자신을 맞추기 보다는 나 자신으로도 당당한 여성, 그것이 ITSME 가 그린 다양한 캐릭터의 모습입니다.
-            NFT와 굿즈를 통해 나 자신을 찾아가는 여정에 당신을 초대합니다.
+            <span style="font-family: GothamMedium;">me:real</span> 은 당당한 나를 위한 프로젝트입니다.
+            <br><br>
+            작품 속 여성들은 거침없이 말합니다.
+            <br>세상이 말하는 여성성의 규정에 나를 가두지 않겠다고. 
+            <br><br>
+            까무잡잡한 피부, 레게 머리, 스포츠 머리, 웨이브 머리, 문신, 염색, 배꼽티, 피어싱
+            <br>타인이 재단한 가치에 외모, 꿈, 가치관을 맞추기 보다는 나다움을 찾아가는 여성.
+            <br>그것이 <span style="font-family: GothamMedium;">me:real</span> 이 그린 다양한 캐릭터의 모습입니다. 
+            <br><br>
+            우리는 <span style="font-family: GothamMedium;">me:real</span> 커뮤니티를 통해 비슷한 생각을 가진 여성들이 서로 연대하길 바랍니다.
+            <br>같은 목소리를 내고, 같은 꿈을 꾸며 세계를 확대해갑니다. 
           </span>
         </div>
 
@@ -101,16 +113,22 @@
       <div id="sec_content_brand">
         <img id="img_title_section_2" src="./resources/logo_blue.png" class="mx-auto d-block" alt="ITSME:">
         
+        <!--
         <div id="text_sub_title_section_2">
           <span >#나는 있는 그대로 나야 #당당하고 긍정적이게</span>
         </div>
+        -->
 
         <div id="text_desc_section_2" class="container">
           <span>
-            스스로에 대한 따뜻한 시선을 담아낸 it’s me는 나의 존재를 있는 그대로 세상에 외치는 구호입니다.
-            이를 통해 여성이 지닌 다양한 정체성에 대한 긍정과 타인에 의해 규정되지 않는 자의식을 담아냅니다.
-            dnt음 이모티콘 :) 에서 추출한 : 는 세상을 바라보는 우리의 시선인 동시에 다양한 주제를 담아낼 수 있는 기호 Colon(콜론)입니다.
-            it’s me에서 it’s us로 세계관을 확장하며 다양한 이야기를 전개해나갈 수 있습니다.
+            What is ‘<span style="font-family: GothamMedium;">me:real</span>’?
+            <br><br>          
+            ‘Real me’
+            <br><span style="font-family: GothamMedium;">me:real</span>은 진짜 나의 모습을 찾아가는 우리들의 이야기를 담고 있습니다. 
+            <br><br>
+            문장부호 ‘:’은 ‘나’와 세상을 연결하는 연결고리인 동시에 다양한 세계로 확장해 나가고자 하는 의지를 표현합니다.
+            <br><br>
+            Me: can be anything
           </span>
         </div>
 
@@ -250,21 +268,13 @@
         <div id="grid-container" class="row row-cols-1 row-cols-sm-2">
           
           <div id="grid-1" class="col">
-              내가 가진 모습을 있는 그대로 사랑하는 캐릭터들,
-              <br>
-              <br>
-              나를 긍정함으로써 무엇이든 될 수 있다고 믿는 이들은 당당하고 자유롭고 자신 있게 내 존재를 드러냅니다.
-              우리의 목표는 이 매력적인 캐릭터들이 지닌 무한한 가능성의 이야기를 모두가 공감할 수 있게 전하는 것입니다.
-              <br>
-              <br>
-              지금 이곳에서 다양한 캐릭터와 함께 진짜 나를 찾는 여정을 시작하세요.
-              <br>
-              그리고 세상에 자신 있게 나를 외치세요.
-              <br>
-              <br>
-              머리가 길든 짧든, 뚱뚱하든 마르든,
-              <br>
-              피부가 어둡든 밝든, 난 그냥 나야!
+            내가 가진 모습을 있는 그대로 사랑하는 캐릭터들.
+            <br>무엇이든 될 수 있다고 믿는 이들은 당당하고 자유롭게 나를 드러냅니다.
+            <br><br>
+            우리 목표는 이 매력적인 캐릭터들이 지닌 무한한 가능성을 모두가 공감할 수 있게 전하는 것입니다.
+            <br><br>
+            지금 이곳에서 나를 대변하는 캐릭터를 통해 나를 찾는 여정을 시작하세요
+            <br>그리고 세상에 자신있게 외치세요!
           </div>
 
           <div id="grid-2" class="col">
@@ -305,14 +315,9 @@
             <img id="logo_artist" src="./resources/logo_easyd.png" class="d-block" alt="ITSME:">
 
             <span  id="text_artist_intro" class="d-block">
-              작가는 도시를 살아가는 젊은 세대들을 관심있게 바라본다. 
-              작가는 그들의 스타일을 주목한다. 
-
-              패션엔 색상, 선, 질감 외에도 누군가의 자아를 함축하고 있다.  
-              그는 패션에 담긴 그들의 언어를 해석해 작품에 담는다.
-              작가가 사용하는 간결하지만 뚜렷한 색채와 자신감있는 선은 
-              나 자신을 드러내는 데 망설임 없는, 주저하지 않길 바라는 
-              작가의 메시지이자 작품 전체를 관통하는 주제이다.
+              EasyD 작가는 도시를 살아가는 젊은 세대들을 관심있게 바라본다.
+              <br>작가는 그들의 스타일을 주목한다. 패션엔 색상, 선, 질감 외에도 누군가의 자아를 함축하고 있다. 그는 패션에 담긴 그들의 언어를 해석해 작품에 담는다.
+              <br>작가가 사용하는 간결한 색채와 자신감 있는 선은 나 자신을 드러내는 데 망설임 없는, 주저하지 않길 바라는 작가의 메시지이자 작품 전체를 관통하는 주제이다.
             </span>
           </div>
 
@@ -373,7 +378,7 @@
 
         <div class="container" id="text_goods_intro">
           <span>
-            한정판 굿즈에 대한 전반적인 설명이 기재될 예정입니다. 블라블라. 요약요약. 한정판 굿즈에 대한 전반적인 설명이 기재될 예정입니다. 블라블라. 요약요약. 한정판 굿즈에 대한 전반적인 설명이 기재될 예정입니다. 블라블라. 요약요약.
+            내 티셔츠에서 숨쉬는 작품. <span style="font-family: GothamMedium;">me:real</span> 캐릭터는 숨을 불어넣어줄 누군가의 손길이 필요합니다. 티셔츠에서, 가방에서, 그립톡에 있는 작품과 내 삶을 공유하세요. 한정판으로 준비한 굿즈를 통해 캐릭터와 함께 성장할 당신을 기다립니다. 
           </span>
         </div>
 
@@ -389,10 +394,10 @@
                 <div class="col">
                   <div class="card-body" id="goods_card_body">
                     <p class="card-title" id="goods_card_title">
-                      Card title
+                      베이직 티셔츠
                     </p>
                     <p class="card-text"  id="goods_card_desc">
-                      ITSME의 NFT에 대한 설명이 추가로 기재될 예정입니다.
+                      후면의 그래픽이 멋스러운 와플 조직감의 베이직 티셔츠입니다. 밑단 사이드 슬릿 디테일이 더해져 활동성을 높였습니다. 모든 체형을 고려해 남녀 공용 두 가지 오버사이즈 옵션으로 선택하실 수 있습니다.
                     </p>
                   </div>
                 </div>
@@ -408,10 +413,10 @@
                 <div class="col">
                   <div class="card-body" id="goods_card_body">
                     <p class="card-title" id="goods_card_title">
-                      Card title
+                      숄더백
                     </p>
                     <p class="card-text"  id="goods_card_desc">
-                      ITSME의 NFT에 대한 설명이 추가로 기재될 예정입니다.
+                      가벼운 외출에도, 출근길에도 모두 손색없는 에코백입니다. 실용적인 수납공간과 탄탄한 소재로 실용성과 스타일 모두 챙길 수 있습니다. 숄더, 크로스, 토트 모든 스타일링이 가능한 가벼운 가방입니다.
                     </p>
                   </div>
                 </div>
@@ -427,10 +432,10 @@
                 <div class="col">
                   <div class="card-body" id="goods_card_body">
                     <p class="card-title" id="goods_card_title">
-                      Card title
+                      마이크로 백
                     </p>
                     <p class="card-text"  id="goods_card_desc">
-                      ITSME의 NFT에 대한 설명이 추가로 기재될 예정입니다.
+                      핸드폰과 립스틱만 넣을 수 있는 가벼운 외출도, 생리대를 수납할 파우치도 모두 가능한 2-Way 마이크로 백.
                     </p>
                   </div>
                 </div>
@@ -446,10 +451,10 @@
                 <div class="col">
                   <div class="card-body" id="goods_card_body">
                     <p class="card-title" id="goods_card_title">
-                      Card title
+                      미니 여행용 캐리어
                     </p>
                     <p class="card-text"  id="goods_card_desc">
-                      ITSME의 NFT에 대한 설명이 추가로 기재될 예정입니다.
+                      가족들과 캠핑 갈 때, 여행갈 때 보조가방으로 활용할 수 있는 미니 캐리어. 실용적인 수납공간과 탄성 좋은 pp소재로 구성했습니다.
                     </p>
                   </div>
                 </div>
@@ -465,10 +470,10 @@
                 <div class="col">
                   <div class="card-body" id="goods_card_body">
                     <p class="card-title" id="goods_card_title">
-                      Card title
+                      그립톡
                     </p>
                     <p class="card-text"  id="goods_card_desc">
-                      ITSME의 NFT에 대한 설명이 추가로 기재될 예정입니다.
+                      반짝반짝 아크릴 그립톡으로 다양한 미리얼 캐릭터를 만나보세요. 가볍고 손에 착 감기는 그립톡으로 나만의 개성을 표현하세요.
                     </p>
                   </div>
                 </div>
@@ -478,6 +483,7 @@
             <div class="container">
               <div class="row row-cols-1 row-cols-md-2">
 
+                <!--
                 <div class="col">
                   <img src="./resources/goods_sample.png" class="card-img-top" id="goods_card_img" alt="goods_sample">
                 </div>
@@ -491,12 +497,28 @@
                     </p>
                   </div>
                 </div>
+                -->
               </div>
             </div>
 
           </div>
         </div>
 
+        <div class="container" id="text_goods_guide">
+          <p>
+            • 위 이미지는 콘셉트 이미지이며 출시되는 이미지와 상이할 수 있습니다. 
+            <br>• 패키지 구성, 굿즈 종류 및 디자인은 변경될 수 있습니다. 
+            <br>• 패키지 구매 가능 날짜는 추후 공지될 예정입니다. 
+            <br>• <span style="font-family: GothamMedium;">me:real</span> 론칭 기념 한정판 패키지 구매 시 NFT가 보상으로 지급됩니다. 
+            <br>• NFT 지급 및 수령 방법에 대한 안내는 추후 공지될 예정입니다. 
+            <br>• 택배 배송기일은 휴일 포함여부 및 상품 재고 상황, 택배사 사정에 의해 지연될 수 있습니다.
+            <br>• 주문 후 상품 준비 과정 중 판매가 완료되어 품절 될 수도 있습니다.
+            <br>• 제주/도서산간 지역은 추가 운임이 발생할 수 있습니다.
+            <br>• 위 상품은 본사 정책에 따라 지정 업체가 배송 및 관리하는 상품입니다. 
+          </p>
+        </div>
+
+        <!--
         <div class="container" id="text_goods_guide">
           <p>
             * 구매시 유의사항에 대한 설명 추가추가 <br>
@@ -506,6 +528,7 @@
             * 구매시 유의사항에 대한 설명 추가추가
           </p>
         </div>
+        -->
 
         <div class="container" id="social_container">
           <div class="card-body">
@@ -513,10 +536,15 @@
               사회공헌
             </p>
             <p class="card-text" id="text_social_desc">
-              ITSME는 일회성이 아닌 꾸준한 사회 공헌 활동을 통해 세상을 바꾸는 작은 걸음을 내딛으려 합니다.
+              <!--ITSME는 일회성이 아닌 꾸준한 사회 공헌 활동을 통해 세상을 바꾸는 작은 걸음을 내딛으려 합니다.-->
+              구매자들은 <span style="font-family: GothamMedium;">me:real</span> 커뮤니티를 통해 소통하고, 세상을 바꾸는 작은 걸음을 함께하려 합니다. 
+              <br>미리얼은 일회성이 아닌 꾸준한 사회 공헌을 꿈꿉니다. 
+              <br>미리얼은 여성의 자립을 응원합니다. 
+              <br>굿즈 판매 수익금 일부는 10대 청소년 생리대 지원 사업, 미혼모 자립 사업 등에 기부됩니다. 
             </p>
           </div>
 
+          <!--
           <div class="card-body">
             <p class="card-title" id="text_social_title" style="margin-top: 2rem;">
               세상을 변화시키는 작은 한 걸음
@@ -526,6 +554,7 @@
               NFT와 굿즈 판매 수익금 일부는 10대 청소년 생리대 지원 사업, 미혼모 자립 사업 등에 기부됩니다.
             </p>
           </div>
+          -->
         </div>
       </div>
     </div>
@@ -536,7 +565,7 @@
         <img id="img_noti_logo" src="./resources/logo_blue.png" class="mx-auto d-block" alt="ITSME:">
 
         <div id="text_noti_title">
-          <span>출시 알림 예약</span>
+          <span>굿즈 판매 알림 예약</span>
         </div>
 
         <form id="contact-form" method="post" action="/input/nofi-reservation" role="form" target="blankifr">
@@ -554,12 +583,19 @@
 
     
         <p class="card-text" id="text_noti_guide">
-            개인정보 수집 및 이용 동의 안내(필수)
-            <br>위의 성함, 전화번호, 이메일 정보 입력 후 알림 신청 시 개인정보 수집 및 이용에 동의하게 됩니다.
-            <br>수집된 정보는 런칭 한정판 패키지 출시 알림을 위해 활용됩니다. 
+          • 한정판 굿즈를 미리 예약하고 받아보세요. 
+          <br>• 개인정보 수집 및 이용 동의 안내(필수)
+          <br>• 위의 성함, 전화번호, 이메일 정보 입력 후 알림 신청 시 개인정보 수집 및 이용에 동의하게 됩니다. 
+          <br>• 수집된 정보는 예약 판매를 위해서만 활용됩니다. 
+          
+          <!--
+          개인정보 수집 및 이용 동의 안내(필수)
+          <br>위의 성함, 전화번호, 이메일 정보 입력 후 알림 신청 시 개인정보 수집 및 이용에 동의하게 됩니다.
+          <br>수집된 정보는 런칭 한정판 패키지 출시 알림을 위해 활용됩니다. 
+          -->
         </p>
     
-        <input type="submit" id="contact-submit" class="btn btn-primary btn-lg" value="알림 신청하기">
+        <input type="submit" id="contact-submit" class="btn btn-primary btn-lg" value="나만의 미리얼 예약하기">
       </div>
     </div>
 
@@ -579,50 +615,126 @@
           <div class="accordion-item mb-4" id="faq_item">
             <h2 class="accordion-header" id="flush-headingOne">
               <button id="faq_header" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Q. ITSME  는 어떤 프로젝트인가요?
+                <span>Q. <span style="font-family: GothamMedium;">me:real</span>은 어떤 프로젝트인가요?</span>
               </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
               <div id="faq_body" class="accordion-body">
-                • 잇츠미는 esdy-D  작가의 여성 캐릭터를 처음으로 선보이는 NFT  프로젝트입니다.
-                <br>자신감 넘치는 여성 캐릭터들을 굿즈와 NFT  등으로 만나볼 수 있으며 구매자는 온- 오프라인을 망라한 다양한 혜택을 받아볼 수 있습니다.
+                <span>
+                  • <span style="font-family: GothamMedium;">me:real</span>은 easy-D 작가의 작품을 굿즈와 NFT로 선보이는 프로젝트입니다. 실체가 있는 굿즈가 중심이기에 NFT를 모르는 사람도, 지갑이 없는 사람도 누구나 작가의 작품이 새겨진 물리적인 제품을 구입할 수 있습니다. 굿즈 패키지 구매자는 보상으로 NFT를 지급받습니다. 구매자는 온-오프라인을 망라하는 다양한 혜택을 받아볼 수 있습니다. 
+                </span>
               </div>
             </div>
           </div>
 
-          <div class="accordion-item mb-4">
+          <div class="accordion-item mb-4" id="faq_item">
             <h2 class="accordion-header" id="flush-headingTwo">
               <button id="faq_header" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Q. ITSME 를 만드는 팀은 누구인가요?
+                <span>Q. <span style="font-family: GothamMedium;">me:real</span>을 만드는 팀은 누구인가요?</span>
               </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
               <div id="faq_body" class="accordion-body">
-                • ITSME  프로젝트를 운영하는 머스트게임즈는 로그유니버스, 플랜트월드 등을 제작한 전문 게임, 앱 제작사입니다.
-                머스트게임즈는 지난 2017 년 설립 이래 우주전략게임 ‘로그유니버스‘,  스토리퍼즐게임 ‘가우스전자’,  탄소배출대응게임 ‘플랜트월드’ 등 웰메이드 콘텐츠를 선보였습니다.
-                <br>• 그동안 쌓아온 노하우와 기술력을 ITSME  에 쏟아 의미있는 NFT  프로젝트를 만들어가려 합니다.
-                다양한 오프라인 협업,  가치있는 굿즈 등으로 변신할 ITSME  프로젝트를 기대해주세요!
+                <span>
+                  • <span style="font-family: GothamMedium;">me:real</span> 프로젝트를 기획한 머스트게임즈는 지난 2017 년 설립 이래 우주전략게임 ‘로그유니버스‘, 스토리퍼즐게임 ‘가우스전자’, 탄소배출대응게임 ‘플랜트월드’ 등 웰메이드 콘텐츠를 선보였습니다. 그동안 쌓아온 노하우와 기술력을 <span style="font-family: GothamMedium;">me:real</span> 에 쏟아 의미있는 프로젝트를 만들어가려 합니다. 다양한 오프라인 협업, 가치 있는 굿즈 등으로 선보일 <span style="font-family: GothamMedium;">me:real</span> 캐릭터를 기대해주세요!
+                </span>
               </div>
             </div>
           </div>
 
-          <div class="accordion-item mb-4">
+          <div class="accordion-item mb-4" id="faq_item">
             <h2 class="accordion-header" id="flush-headingThree">
               <button id="faq_header" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                Q. ITSME  프로젝트의 목표는 무엇인가요?
+                <span>Q. <span style="font-family: GothamMedium;">me:real</span> 프로젝트의 목표는 무엇인가요?</span>
               </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
               <div id="faq_body" class="accordion-body">
-                • 잇츠미 의 목표는 작품 판매로 완성되지 않습니다.
-                프로젝트의 진정한 목표는 구매자가 작품 속 나를 통해 자신을 찾아가고, 주체적이고 자신감 넘치는 여성으로 거듭나는 여정을 돕고, 함께 만들어가는데 있습니다.
-                <br>• Love my self
-                <br>• Be everything!
-                <br>• 온오프라인 활동, 커뮤니티 형성, 여성 자립을 돕는 기부 등 다양한 활동을 통해 프로젝트 영역을 확장하고, 선한 영향력을 끼칠 예정입니다.
-                잇츠미 프로젝트로 더 많은 여성이 웃고, 자신을 찾아가는 여정에 동참할 수 있기를 응원해주세요
+                <span>
+                  • <span style="font-family: GothamMedium;">me:real</span>의 목표는 작품 판매로 완성되지 않습니다. 프로젝트의 진정한 목표는 구매자가 작품 속 나를 통해 자신을 찾아가는데 있습니다. 
+                  <br>• 주체적이고 자신감 넘치는 여성. 당당한 목소리를 끌어내고 함께 연대해가는 프로젝트. 이것이 저희의 목표입니다. 
+                  <br>• 온오프라인 활동, 커뮤니티 형성, 여성 자립을 돕는 기부 등 다양한 활동을 통해 프로젝트 영역을 확장하고, 선한 영향력을 끼칠 예정입니다. 
+                  <br>• 미리얼 프로젝트로 더 많은 여성이 웃고, 자신을 찾아가는 여정에 동참할 수 있기를 응원해주세요.
+                </span>
               </div>
             </div>
           </div>
+
+          <div class="accordion-item mb-4" id="faq_item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button id="faq_header" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                <span>Q. <span style="font-family: GothamMedium;">me:real</span> nft는 어떤 블록체인을 이용하나요?</span>
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div id="faq_body" class="accordion-body">
+                <span>
+                  • <span style="font-family: GothamMedium;">me:real</span> nft는 폴리곤 블록체인을 이용합니다.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item mb-4" id="faq_item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button id="faq_header" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                <span>Q. 어떤 지갑으로 민팅할 수 있나요?</span>
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div id="faq_body" class="accordion-body">
+                <span>
+                  • 지갑은 메타마스크를 사용합니다.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item mb-4" id="faq_item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button id="faq_header" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                <span>Q. 저작권을 활용할 수 있나요?</span>
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+              <div id="faq_body" class="accordion-body">
+                <span>
+                  • <span style="font-family: GothamMedium;">me:real</span> 관련된 작품은 상업적인 이용, 임의적인 변형을 불허합니다. 다만, 비상업적 활용은 허용합니다. NFT 소지자는 각 작품에 대한 소유권만 인정됩니다.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item mb-4" id="faq_item">
+            <h2 class="accordion-header" id="flush-headingSeven">
+              <button id="faq_header" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                <span>Q. NFT를 잘 모르는데 패키지를 구입할 수 있을까요?</span>
+              </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+              <div id="faq_body" class="accordion-body">
+                <span>
+                  • 걱정하지 마세요. <span style="font-family: GothamMedium;">me:real</span>은 티셔츠, 가방 등 실제하는 굿즈가 중심인 프로젝트입니다. NFT는 보상으로 지급되며, 이는 구매자가 지급 여부를 선택해 결정할  수 있습니다.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item mb-4" id="faq_item">
+            <h2 class="accordion-header" id="flush-headingEight">
+              <button id="faq_header" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                <span>Q. <span style="font-family: GothamMedium;">me:real</span> 커뮤니티는 어떻게 참여할 수 있나요?</span>
+              </button>
+            </h2>
+            <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+              <div id="faq_body" class="accordion-body">
+                <span>
+                  • 향후 구매자를 대상으로 트위터, 네이버카페 등의 채널에서 커뮤니티를 만들어갈 예정입니다. 커뮤니티에 관한 상세한 내용은 추후 공개됩니다.
+                </span>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
