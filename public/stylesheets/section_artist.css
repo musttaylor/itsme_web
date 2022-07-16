@@ -68,17 +68,6 @@
     padding: 0;
 }
 
-#text_artist_intro {
-    position: relative;
-    margin: 2rem 1rem 0 0;
-
-    font-family: 'AppleSDGothicNeoR';
-    font-size: 14px;
-    line-height: 160%;
-    text-align: left;
-    color: #0F2D90;
-}
-
 #container_artworks {
     position: relative;
     margin: 2rem 0 2rem 0;
