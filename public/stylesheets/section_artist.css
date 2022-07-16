@@ -26,6 +26,17 @@
         margin: 5rem 0 5rem 0;
         padding: 0;
     }
+        
+    #text_artist_intro {
+        position: relative;
+        margin: 2rem 1rem 0 0;
+
+        font-family: 'AppleSDGothicNeoR';
+        font-size: 18px;
+        line-height: 160%;
+        text-align: left;
+        color: #0F2D90;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -34,6 +45,17 @@
         content: url(../resources/sec_artist_title_s.png);
         margin: 1.5rem 0 1.25rem 0;
         padding: 0;
+    }
+        
+    #text_artist_intro {
+        position: relative;
+        margin: 2rem 1rem 0 0;
+
+        font-family: 'AppleSDGothicNeoR';
+        font-size: 14px;
+        line-height: 160%;
+        text-align: left;
+        color: #0F2D90;
     }
 }
 
