@@ -1,14 +1,14 @@
 
 #sec_root_char {
     background-color: #C5D7FF;
-    min-height: 707px;
+    min-height: 800px;
 }
 
 #sec_content_char {
     max-width: 1116px;
     min-width: 360px;
 
-    min-height: 707px;
+    min-height: 800px;
 
     position:relative;
     margin: 0 auto;
@@ -77,7 +77,8 @@
     #sec_char_bg {
         display: block;
         content: url(../resources/sec_char_bg_s.png);
-    
+
+        object-fit: cover;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -161,6 +162,11 @@
 }
 
 @media screen and (max-width: 575px) {
+    #char_container {
+        position: relative;
+        min-height: 800px;
+    }
+
     #char_tab_container {
         position: relative;
         min-height: 700px;
