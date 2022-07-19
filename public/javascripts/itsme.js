@@ -13,9 +13,10 @@ const page_en = 'index_en.html';
     
     document.getElementById('testButton').addEventListener('click',() => {   
     // document.getElementById('nav_button_lang').addEventListener('click',() => {   
-        g_lang = ('ko' == g_lang) ? 'en' : 'ko';
+        //g_lang = ('ko' == g_lang) ? 'en' : 'ko';
+        //change_lang();
 
-        change_lang();
+        document.getElementById("include_test").innerHTML='<object type="text/html" data="incl_test.html"></object>';
     })
     
 
