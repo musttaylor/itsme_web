@@ -50,6 +50,8 @@
         font-size: 12px;
         line-height: 160%;
         color: #FFFFFF;
+
+        word-break: keep-all;
     }
 
     #contact-submit {
@@ -123,6 +125,8 @@
         font-size: 10px;
         line-height: 160%;
         color: #FFFFFF;
+
+        word-break: keep-all;
     }
 
     #contact-submit {

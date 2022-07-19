@@ -66,6 +66,8 @@
         line-height: 100%;
 
         color: #000000;
+
+        word-break: keep-all;
         
         flex: none;
         order: 0;
@@ -102,6 +104,8 @@
         line-height: 100%;
 
         color: #000000;
+
+        word-break: keep-all;
         
         flex: none;
         order: 0;

@@ -76,7 +76,7 @@
 
         max-width: 963px;
         margin: 2rem auto 2rem auto;
-        
+        word-break: keep-all;
         font-family: 'AppleSDGothicNeoR';
         font-size: 16px;
         line-height: 180%;
@@ -89,6 +89,9 @@
         
         left: 50%;
         transform: translateX(-50%);
+
+        border-color: transparent;
+        border-radius: 12px;
 
         width: 525px;
         height: 297px;
@@ -124,7 +127,7 @@
 
         max-width: 356px;
         margin: 2rem auto;
-        
+        word-break: keep-all;
         font-family: 'AppleSDGothicNeoR';
         font-size: 14px;
         line-height: 160%;
@@ -137,6 +140,9 @@
         
         left: 50%;
         transform: translateX(-50%);
+
+        border-color: transparent;
+        border-radius: 8px;
 
         width: 356px;
         height: 201px;

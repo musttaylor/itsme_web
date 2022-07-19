@@ -48,7 +48,7 @@
       border-color: #ffffff;
       box-shadow: none;
 
-      font-family: 'AppleSDGothicNeoR';
+      font-family: 'AppleSDGothicNeoM';
       font-size: 19px;
       line-height: 23px;
       display: flex;
@@ -59,12 +59,14 @@
    }
 
    #faq_body {
-      font-family: 'AppleSDGothicNeoR';
+      font-family: 'AppleSDGothicNeoL';
       font-size: 19px;
       line-height: 23px;
       letter-spacing: -0.32px;
 
-      color: #212529;
+      color: #737577;
+
+      word-break: keep-all;
    }
 }
 
@@ -114,7 +116,7 @@
       border-color: #ffffff;
       box-shadow: none;
 
-      font-family: 'AppleSDGothicNeoR';
+      font-family: 'AppleSDGothicNeoM';
       font-size: 14px;
       line-height: 17px;
       display: flex;
@@ -125,12 +127,14 @@
    }
 
    #faq_body {
-      font-family: 'AppleSDGothicNeoR';
+      font-family: 'AppleSDGothicNeoL';
       font-size: 14px;
       line-height: 17px;
       letter-spacing: -0.32px;
 
-      color: #212529;
+      color: #737577;
+
+      word-break: keep-all;
    }
 }
 

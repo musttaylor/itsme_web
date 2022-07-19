@@ -65,6 +65,14 @@
     margin: 0 auto;
 }
 
+#title_banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+    margin: 2rem auto 0;
+}
+
 
 /* nav */
 #nav_button_brand,
@@ -107,10 +115,12 @@
     #text_intro {
         position: inherit;
         font-family: 'AppleSDGothicNeoR';
-        font-size: 16px;
-        line-height: 180%;
+        font-size: 18px;
+        line-height: 140%;
         text-align: center;
         color: #FFFFFF;
+
+        word-break: keep-all;
 
         margin-top: 2rem;
     }
@@ -120,11 +130,13 @@
     #text_intro {
         position: inherit;
         font-family: 'AppleSDGothicNeoR';
-        font-size: 14px;
-        line-height: 180%;
+        font-size: 16px;
+        line-height: 140%;
         text-align: center;
         color: #FFFFFF;
 
+        word-break: keep-all;
+        
         max-width: 356px;
     
         margin-top: 2rem;
@@ -168,6 +180,9 @@
 @media screen and (min-width: 576px) {
     .intro_video {
         position: relative;
+
+        border-color: transparent;
+        border-radius: 12px;
     
         width: 546px;
         height: 308px;
@@ -206,7 +221,10 @@
 @media screen and (max-width: 575px) {
     .intro_video {
         position: relative;
-    
+
+        border-color: transparent;
+        border-radius: 8px;
+
         width: 356px;
         height: 200px;
     }

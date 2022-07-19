@@ -36,6 +36,8 @@
         line-height: 160%;
         text-align: left;
         color: #0F2D90;
+
+        word-break: keep-all;
     }
 }
 
@@ -56,6 +58,8 @@
         line-height: 160%;
         text-align: left;
         color: #0F2D90;
+
+        word-break: keep-all;
     }
 }
 
@@ -68,11 +72,14 @@
     padding: 0;
 }
 
+#container_artist {
+    position: relative;
+    padding: 0 1rem;
+}
+
 #container_artworks {
     position: relative;
-    margin: 2rem 0 2rem 0;
     padding: 0;
-    max-width: 1116px;
 }
 
 #row_artworks {
