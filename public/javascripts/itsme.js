@@ -9,13 +9,11 @@ const page_en = 'index_en.html';
     //console.clear();
 
     /* -------------- Set language -------------- */
-    init_lang();
+    //init_lang();
     
     document.getElementById('testButton').addEventListener('click',() => {   
     // document.getElementById('nav_button_lang').addEventListener('click',() => {   
-        console.log('clicked_test');  
         g_lang = ('ko' == g_lang) ? 'en' : 'ko';
-        console.log('clicked_test - g_lang =' + g_lang);     
 
         change_lang();
     })

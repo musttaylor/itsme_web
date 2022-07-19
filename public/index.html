@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 
+    <!-- show & hide func test-->
+    <button id="testButton" type="button">lang change</button>
 
     <div id="sec_root_intro">
       <div id="sec_content_intro">
@@ -67,19 +69,64 @@
             </div>
         </nav>
 
-        <!-- show & hide func test-->
-        <button style="display: none;" id="testButton" type="button">lang test</button>
         
+        <div class="row row-cols-2">
+          <div class="col">
+            <video autoplay loop muted style="width: 100%; height: 100%; position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+              <source src="./resources/video_mereal_square.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div class="col">
+            <div class="container"
+              style="
+              position: inherit;
+              font-family: 'AppleSDGothicNeoR';
+              font-size: 18px;
+              line-height: 140%;
+              text-align: left;
+              color: #FFFFFF;
+              word-break: keep-all;
+              margin-top: 2rem;">
+              <span>
+                <span style="font-size: 30px;">
+                  <span style="font-family: GothamMedium;">me:real</span> 은 당당한 나를 위한 프로젝트입니다.
+                </span>
+                <br><br>
+                작품 속 여성들은 거침없이 말합니다.
+                <br>세상이 말하는 여성성의 규정에 나를 가두지 않겠다고. 
+                <br><br>
+                까무잡잡한 피부, 레게 머리, 스포츠 머리, 웨이브 머리, 문신, 염색, 배꼽티, 피어싱
+                <br>타인이 재단한 가치에 외모, 꿈, 가치관을 맞추기 보다는 나다움을 찾아가는 여성.
+                <br>그것이 <span style="font-family: GothamMedium;">me:real</span> 이 그린 다양한 캐릭터의 모습입니다. 
+                <br><br>
+                우리는 <span style="font-family: GothamMedium;">me:real</span> 커뮤니티를 통해 비슷한 생각을 가진 여성들이 서로 연대하길 바랍니다.
+                <br>같은 목소리를 내고, 같은 꿈을 꾸며 세계를 확대해갑니다. 
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!--
+        <video controls autoplay loop muted style="width: 600px; height: 400px;" >
+          <source src="./resources/video_char.mp4" style="width: 600px; height: 400px;" type="video/mp4" />
+        </video>
+        -->
 
         <!--img id="title_banner" src="./resources/title_banner.png" alt="ITSME:"-->
 
-        
+        <!--
         <div class="v-story-wrap con" id="intro_video_container">
           <div class="v-story-slider" data-aos="fade-up">
               <div class="slider-item">
-                    <iframe class="intro_video" 
-                    src="https://www.youtube.com/embed/l0sg928KD5o?controls=0&autoplay=1&loop=1&mute=1&playlist=l0sg928KD5o" 
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <video class="intro_video" autoplay loop muted >
+                  <source src="./resources/video_char.mp4" type="video/mp4" />
+                </video>
+                
+                    <iframe class="intro_video" controls autoplay loop muted 
+                    src="./resources/video_char.mp4" 
+                    frameborder="0" allow="autoplay;" allowfullscreen="true"></iframe>
+                    
               </div>
               <div class="slider-item">
                     <iframe class="intro_video" 
@@ -110,7 +157,7 @@
             <br>같은 목소리를 내고, 같은 꿈을 꾸며 세계를 확대해갑니다. 
           </span>
         </div>
-
+-->
       </div>
     </div>
 
@@ -140,8 +187,14 @@
         </div>
 
         <div id="brand_video_container">
+          <video class="brand_video" autoplay loop muted style="width: 534px; height: 300px; position: relative; left: 50%; transform: translateX(-50%);">
+            <source src="./resources/video_char.mp4" type="video/mp4" />
+          </video>
+
+          <!--
           <iframe id="brand_video" src="https://www.youtube.com/embed/l0sg928KD5o?controls=0&autoplay=1&loop=1&mute=1&playlist=l0sg928KD5o" title="video1" 
           frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          -->
         </div>
 
       </div>
