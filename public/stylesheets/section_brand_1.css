@@ -1,0 +1,178 @@
+@media screen and (min-width: 576px) {
+    #sec_root_brand {
+        background-color: #ffffff;
+
+        background-image: url(../resources/bg_sec_brand_blue.png);
+        background-repeat: no-repeat;
+        background-size: auto 95%;
+        background-position: center;
+
+        position:relative;
+        padding-top: 16rem;
+        padding-bottom: 9rem;
+    }
+
+    #sec_brand_bg {
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        object-fit: cover;
+
+        display: none;
+        content: url(../resources/bg_sec_brand_blue.png);
+        max-width: 1116px;
+        width: 100%;
+        height: 100%;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #sec_root_brand {
+        background-color: #ffffff;
+
+        background-image: url(../resources/bg_sec_brand_blue.png);
+        background-repeat: no-repeat;
+        background-size: auto 95%;
+        background-position: center;
+
+        position:relative;
+        padding-top: 12rem;
+        padding-bottom: 6rem;
+    }
+
+    #sec_brand_bg {
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        object-fit: cover;
+
+        display: none;
+        content: url(../resources/bg_sec_brand_blue.png);
+        max-width: 1116px;
+        width: 100%;
+        height: 100%;
+        margin: 2rem auto;
+    }
+}
+
+#sec_content_brand {
+    max-width: 1116px;
+    min-width: 360px;
+    position:relative;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+@media screen and (min-width: 576px) {
+    #img_title_section_2 {
+        position:relative;
+
+        width: 240px;
+        height: auto;
+    }
+
+    /*
+    #text_sub_title_section_2 {
+        position:relative;
+        margin-bottom: 2rem;
+
+        max-width: 963px;
+        margin: 2rem auto 3rem auto;
+
+        font-family: 'AppleSDGothicNeoB';
+        font-size: 16px;
+        line-height: 180%;
+        text-align: center;
+        color:#0F2D90;
+    }
+    */
+        
+    #text_desc_section_2 {
+        position:relative;
+
+        width: 85%;
+        max-width: 963px;
+        margin: 2rem auto 2rem auto;
+        word-break: keep-all;
+        font-family: 'AppleSDGothicNeoR';
+        font-size: 16px;
+        line-height: 180%;
+        text-align: center;
+        color: #000000;
+    }
+        
+    #brand_video {
+        position: relative;
+        
+        left: 50%;
+        transform: translateX(-50%);
+
+        border-color: transparent;
+        border-radius: 12px;
+
+        width: 85%;
+        height: auto
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #img_title_section_2 {
+        position:relative;
+
+        width: 138px;
+        height: auto;
+    }
+
+    /*
+    #text_sub_title_section_2 {
+        position:relative;
+        margin-bottom: 2rem;
+
+        max-width: 356px;
+        margin: 2rem auto;
+
+        font-family: 'AppleSDGothicNeoB';
+        font-size: 14px;
+        line-height: 160%;
+        text-align: center;
+        color:#0F2D90;
+    }
+    */
+        
+    #text_desc_section_2 {
+        position:relative;
+
+        width: 85%;
+        max-width: 356px;
+        margin: 2rem auto;
+        word-break: keep-all;
+        font-family: 'AppleSDGothicNeoR';
+        font-size: 14px;
+        line-height: 160%;
+        text-align: center;
+        color: #000000;
+    }
+
+    #brand_video {
+        position: relative;
+        
+        left: 50%;
+        transform: translateX(-50%);
+
+        border-color: transparent;
+        border-radius: 8px;
+
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+#brand_video_container {
+    position: relative;
+    margin: 0 auto;
+}

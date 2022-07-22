@@ -16,7 +16,7 @@ const page_en = 'index_en.html';
         //g_lang = ('ko' == g_lang) ? 'en' : 'ko';
         //change_lang();
 
-        window.location.replace('index_1.html');
+        window.location.replace('index_2.html');
 
         //document.getElementById("include_test").innerHTML='<object type="text/html" data="incl_test.html"></object>';
     })

@@ -16,7 +16,7 @@ const page_en = 'index_en.html';
         //g_lang = ('ko' == g_lang) ? 'en' : 'ko';
         //change_lang();
 
-        window.location.replace('index_1.html');
+        window.location.replace('index.html');
 
         //document.getElementById("include_test").innerHTML='<object type="text/html" data="incl_test.html"></object>';
     })
@@ -196,9 +196,9 @@ function nav_toggle() {
         // toggled
         document.getElementById('toggle-btn').setAttribute('src','./resources/button_nav_toggle_x.png');
         if (576 <= window.innerWidth) {
-            document.getElementById('nav_container').setAttribute('style','background-color: #ffffff; background-image: url("./resources/intro_bg.png"); background-repeat: no-repeat; background-position: right top;');
+            //document.getElementById('nav_container').setAttribute('style','background-color: #ffffff; background-image: url("./resources/intro_bg.png"); background-repeat: no-repeat; background-position: right top;');
         } else {
-            document.getElementById('nav_container').setAttribute('style','background-color: #ffffff; background-image: url("./resources/intro_bg_mobile.png"); background-repeat: no-repeat; background-position: right top;');
+            //document.getElementById('nav_container').setAttribute('style','background-color: #ffffff; background-image: url("./resources/intro_bg_mobile.png"); background-repeat: no-repeat; background-position: right top;');
         }
         document.getElementById('nav_inner_container').setAttribute('style','position: relative; margin-top: 50px;');
     } else {
