@@ -1,0 +1,27 @@
+@media screen and (min-width: 576px) {
+    @media screen and (max-width: 1116px) {
+        #sec_root_about {
+            background-color: #ffffff;
+            background-image: url("../resources/sec_about_bg.png");
+            background-repeat: no-repeat;
+            background-position: right -25vw center;
+
+        }
+    }
+
+    @media screen and (min-width: 1117px) {
+        #sec_root_about {
+            background-color: #ffffff;
+            background-image: url("../resources/sec_about_bg.png");
+            background-repeat: no-repeat;
+            background-position: right -25vw center;
+
+        }
+    }
+    
+}
+
+#sec_root_about {
+    position: relative;
+    margin: 6rem auto;
+}

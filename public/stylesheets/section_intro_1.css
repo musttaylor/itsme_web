@@ -1,21 +1,25 @@
 @media screen and (min-width: 576px) {
     #sec_root_intro {
         background-color: #ffffff;
-        
+        height: 95vh;
+
+        background-image: url("../resources/sect_intro_title.png");
+        background-position: center;
+        background-repeat: repeat-y;
     }
 
     #sec_intro_title_container {
         max-width: 1116px;
         min-width: 360px;
-        position:relative;
-        width: 100%;
+        position:absolute;
+        height: 100%;
     }
 
     #sec_intro_title_bg {
-        width: 100%;
-        height: auto;
-
-        content: url("../resources/section_01_main.png");
+        width: auto;
+        height: 100%;
+        display: none;
+        content: url("../resources/sect_intro_title.png");
         object-fit: cover;
     }
 
@@ -67,7 +71,9 @@
         width: 100%;
         height: auto;
 
-        content: url("../resources/section_01_main_mobile.png");
+        
+
+        content: url("../resources/sect_intro_title_m.png");
         object-fit: cover;
     }
 
@@ -107,6 +113,8 @@
     min-width: 360px;
     position:relative;
     margin: 0 auto;
+
+    height: 100%;
 }
 
 #title_banner {
@@ -136,9 +144,8 @@
 #nav_container {
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 1.5rem;
 
-    height: 100%;
+    background-color: #FFFFFF;
 
     max-width: 1116px;
     min-width: 360px;

@@ -147,8 +147,10 @@
         margin-right: 3.63px;
         margin-bottom: 0;
         
-        background: #FFFFFF;
+        background: #ffffff;
         border-radius: 18px;
+
+        box-shadow: 2px 2px 2px #00000022;
     
         font-family: 'AppleSDGothicNeoM';
         font-size: 16px;
