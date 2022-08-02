@@ -106,3 +106,7 @@
     order: 0;
     flex-grow: 0;
 }
+
+.card-img-top {
+    border-radius: 24px;
+}

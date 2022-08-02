@@ -223,6 +223,8 @@
         background: #FFFFFF;
         border-radius: 18px;
 
+        box-shadow: 2px 2px 2px #00000022;
+
         font-family: 'AppleSDGothicNeoM';
         font-size: 12px;
         line-height: 180%;
